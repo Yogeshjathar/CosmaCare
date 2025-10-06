@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  notification-mongo:
+    image: mongo:7.0
+    container_name: notification-service-mongo-db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: notification_admin
+      MONGO_INITDB_ROOT_PASSWORD: notification_admin123
+      MONGO_INITDB_DATABASE: notification_db
+    ports:
+      - "27029:27017"  
+    volumes:
+      - notification_mongo_data:/data/db
+
+volumes:
+  notification_mongo_data:

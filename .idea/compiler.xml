@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for cosmacare-user-service" enabled="true">
+      <profile name="Annotation profile for Cosmacare Platform" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -19,6 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CosmaCare" target="1.5" />
       <module name="cosmacare-gateway" target="18" />
       <module name="cosmacare-user-service" target="18" />
     </bytecodeTargetLevel>

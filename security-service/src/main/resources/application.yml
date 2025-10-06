@@ -1,0 +1,23 @@
+server:
+    port: 9095
+
+eureka :
+    client :
+        service-url :
+            defaultZone : http://localhost:8761/eureka/
+
+spring:
+    application:
+        name: security-service
+
+resilience4j:
+    circuitbreaker:
+        instances:
+            inventoryService:
+                registerHealthIndicator: true
+                slidingWindowSize: 10
+                failureRateThreshold: 50
+                waitDurationInOpenState: 10s
+                permittedNumberOfCallsInHalfOpenState: 3
+                minimumNumberOfCalls: 5
+                automaticTransitionFromOpenToHalfOpenEnabled: true

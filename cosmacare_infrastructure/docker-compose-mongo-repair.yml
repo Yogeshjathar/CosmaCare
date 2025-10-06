@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  repair-mongo:
+    image: mongo:7.0
+    container_name: repair-service-mongo-db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: repair_admin
+      MONGO_INITDB_ROOT_PASSWORD: repair_admin123
+      MONGO_INITDB_DATABASE: repair_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - repair_mongo_data:/data/db
+
+volumes:
+  repair_mongo_data:

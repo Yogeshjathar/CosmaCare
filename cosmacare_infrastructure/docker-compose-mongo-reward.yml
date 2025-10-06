@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  reward-mongo:
+    image: mongo:7.0
+    container_name: reward-service-mongo-db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rewardadmin
+      MONGO_INITDB_ROOT_PASSWORD: rewardadmin123
+      MONGO_INITDB_DATABASE: rewarddb
+    ports:
+      - "27018:27017"
+    volumes:
+      - reward_mongo_data:/data/db
+
+volumes:
+  reward_mongo_data:

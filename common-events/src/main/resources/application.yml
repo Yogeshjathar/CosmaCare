@@ -1,0 +1,6 @@
+sevrver:
+    port: 9999
+
+spring:
+    application:
+        name: common-events
