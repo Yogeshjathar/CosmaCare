@@ -1,7 +1,14 @@
-eureka :
-  client :
-    service-url :
-      defaultZone : http://localhost:8761/eureka/
+server:
+  port: 8585
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
 
 spring:
   application:
@@ -9,32 +16,90 @@ spring:
 
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true   # Makes route matching case-insensitive (optional but recommended)
+
       routes:
         - id: user-service
-          uri: http://localhost:8081
+          uri: lb://cosmacare-user-service
           predicates:
             - Path=/api/user/**
+          filters:
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+                methods: GET
+                backoff:
+                  firstBackoff: 2s
+                  maxBackoff: 5s
+                  factor: 2
+            - name: CircuitBreaker
+              args:
+                name: userServiceCB
+                fallbackUri: forward:/fallback/user
 
         - id: repair-service
-          uri: http://localhost:8082
+          uri: lb://repair-service
           predicates:
             - Path=/api/repair/**
+          filters:
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+                methods: GET
+            - name: CircuitBreaker
+              args:
+                name: userServiceCB
+                fallbackUri: forward:/fallback/repair
 
         - id: reward-service
-          uri: http://localhost:8083
+          uri: lb://reward-service
           predicates:
-            - Path=/api/rewards/**
+            - Path=/api/rewards/**, /testRewardService
+          filters:
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+                methods: GET
+            - name: CircuitBreaker
+              args:
+                name: userServiceCB
+                fallbackUri: forward:/fallback/reward
 
         - id: notification-service
-          uri: http://localhost:8084
+          uri: lb://notification-service
           predicates:
             - Path=/notifications/**
+          filters:
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+                methods: GET
+            - name: CircuitBreaker
+              args:
+                name: userServiceCB
+                fallbackUri: forward:/fallback/notification
 
         - id: security-service
-          uri: http://localhost:9095
+          uri: lb://security-service
           predicates:
             - Path=/auth/**
-
+          filters:
+            - name: Retry
+              args:
+                retries: 3
+                statuses: BAD_GATEWAY, SERVICE_UNAVAILABLE
+                methods: GET
+            - name: CircuitBreaker
+              args:
+                name: userServiceCB
+                fallbackUri: forward:/fallback/security
 
 jwt:
   secret: "afafasfafafasfasfasfafacasdasfasxASFACASDFACASDFASFASFDAFASFASDAADSCSDFADCVSGCFVADXCcadwavfsfarvf"

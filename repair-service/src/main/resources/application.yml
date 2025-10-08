@@ -1,14 +1,25 @@
 server:
     port: 8082
 
-eureka :
-    client :
-        service-url :
-            defaultZone : http://localhost:8761/eureka/
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+    instance:
+        prefer-ip-address: true
+        hostname: localhost
+        instance-id: ${spring.application.name}:${server.port}
 
-logging :
-    level :
-        root : INFO
+logging:
+    file:
+        name: logs/application.log       # File path for logs
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+        file: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+    level:
+        root: INFO                       # Default logging level
+        com.cosmacare: DEBUG              # package-specific logging
+
 spring:
     application:
         name: repair-service
@@ -31,3 +42,20 @@ spring:
 
 jwt:
     secret: afafasfafafasfasfasfafacasdasfasxASFACASDFACASDFASFASFDAFASFASDAADSCSDFADCVSGCFVADXCcadwavfsfarvf
+
+# Prometheus
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+            base-path: /actuator
+    endpoint:
+        prometheus:
+            enabled: true
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+        enable:
+            all=true:

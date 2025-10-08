@@ -1,0 +1,621 @@
+2025-10-08 09:40:45 INFO  [main] c.c.r.RepairServiceApplication - Starting RepairServiceApplication using Java 21.0.6 with PID 37952 (C:\Users\jatha\Projects\CosmaCare\repair-service\target\classes started by jatha in C:\Users\jatha\Projects\CosmaCare\repair-service)
+2025-10-08 09:40:46 DEBUG [main] c.c.r.RepairServiceApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-10-08 09:40:46 INFO  [main] c.c.r.RepairServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 09:40:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-08 09:40:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158 ms. Found 1 MongoDB repository interface.
+2025-10-08 09:40:48 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc4891b-216b-320a-adc9-9e663b1988bf
+2025-10-08 09:40:50 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-10-08 09:40:50 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 09:40:50 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-08 09:40:50 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 09:40:50 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4893 ms
+2025-10-08 09:40:52 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='repair_admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@ab4d2ba], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@39f68aec, com.mongodb.Jep395RecordCodecProvider@65ff4b8c, com.mongodb.KotlinCodecProvider@b81938d]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@278cb145], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-08 09:40:52 INFO  [cluster-ClusterId{value='68e5e44c23097a85aca7ea22', description='null'}-localhost:27017] org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=77128200, minRoundTripTimeNanos=0}
+2025-10-08 09:40:55 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-08 09:40:58 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-10-08 09:40:58 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-08 09:40:58 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-10-08 09:40:58 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-10-08 09:40:58 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-10-08 09:40:59 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 09:40:59 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-10-08 09:40:59 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-10-08 09:40:59 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-10-08 09:40:59 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-10-08 09:40:59 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-10-08 09:40:59 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-10-08 09:40:59 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-10-08 09:41:00 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-10-08 09:41:00 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-10-08 09:41:00 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-10-08 09:41:00 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1759896660045 with initial instances count: 5
+2025-10-08 09:41:00 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPAIR-SERVICE with eureka with status UP
+2025-10-08 09:41:00 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759896660062, current=UP, previous=STARTING]
+2025-10-08 09:41:00 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 09:41:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-10-08 09:41:00 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-10-08 09:41:00 INFO  [main] c.c.r.RepairServiceApplication - Started RepairServiceApplication in 15.297 seconds (process running for 16.271)
+2025-10-08 09:41:00 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 09:43:10 INFO  [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 09:43:10 INFO  [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 09:43:10 INFO  [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] c.c.r.service.RepairService - Creating new repair request
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] c.c.r.service.RepairService - Saved new repair request
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] c.c.r.producer.RepairEventProducer - Producing event, RepairCreatedEvent(id=68e5e4f723097a85aca7ea23, storeWorkerId=67fa7c95-7518-47a4-817d-76645c610838, storeWorkerUserName=prashanttt, issueType=hey, description=rack get loosed, status=PENDING, assignedTo=technician01, createdAt=2025-10-08T09:43:43.145002600)
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = repair-service-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] o.a.k.clients.producer.KafkaProducer - [Producer clientId=repair-service-producer-1] Instantiated an idempotent producer.
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-10-08 09:43:43 INFO  [http-nio-8082-exec-3] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1759896823466
+2025-10-08 09:43:44 INFO  [kafka-producer-network-thread | repair-service-producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=repair-service-producer-1] Cluster ID: s2prjvz1RxSKjupeExLcSQ
+2025-10-08 09:43:44 INFO  [kafka-producer-network-thread | repair-service-producer-1] o.a.k.c.p.i.TransactionManager - [Producer clientId=repair-service-producer-1] ProducerId set to 2001 with epoch 0
+2025-10-08 09:45:59 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REPAIR-SERVICE with eureka with status DOWN
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897242799, current=DOWN, previous=UP]
+2025-10-08 09:50:42 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-08 09:50:42 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-08 09:50:42 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer - [Producer clientId=repair-service-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for repair-service-producer-1 unregistered
+2025-10-08 09:50:42 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-10-08 09:50:51 INFO  [main] c.c.r.RepairServiceApplication - Starting RepairServiceApplication using Java 21.0.6 with PID 7160 (C:\Users\jatha\Projects\CosmaCare\repair-service\target\classes started by jatha in C:\Users\jatha\Projects\CosmaCare\repair-service)
+2025-10-08 09:50:51 DEBUG [main] c.c.r.RepairServiceApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-10-08 09:50:51 INFO  [main] c.c.r.RepairServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 09:50:54 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-08 09:50:54 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 231 ms. Found 1 MongoDB repository interface.
+2025-10-08 09:50:54 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc4891b-216b-320a-adc9-9e663b1988bf
+2025-10-08 09:50:56 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-10-08 09:50:56 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 09:50:56 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-08 09:50:56 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 09:50:56 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4952 ms
+2025-10-08 09:50:57 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='repair_admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@633a11eb], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7a247711, com.mongodb.Jep395RecordCodecProvider@4910afdf, com.mongodb.KotlinCodecProvider@764db16c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@45cb5307], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-08 09:50:57 INFO  [cluster-ClusterId{value='68e5e6a971e5ba627e014414', description='null'}-localhost:27017] org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=43822100, minRoundTripTimeNanos=0}
+2025-10-08 09:50:59 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-08 09:51:02 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-10-08 09:51:02 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-08 09:51:02 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-10-08 09:51:02 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-10-08 09:51:02 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-10-08 09:51:02 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-10-08 09:51:04 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-10-08 09:51:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-10-08 09:51:04 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-10-08 09:51:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1759897264015 with initial instances count: 6
+2025-10-08 09:51:04 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPAIR-SERVICE with eureka with status UP
+2025-10-08 09:51:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897264043, current=UP, previous=STARTING]
+2025-10-08 09:51:04 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 09:51:04 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-10-08 09:51:04 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-10-08 09:51:04 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 09:51:04 INFO  [main] c.c.r.RepairServiceApplication - Started RepairServiceApplication in 13.821 seconds (process running for 14.843)
+2025-10-08 09:51:37 INFO  [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 09:51:37 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 09:51:37 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-08 09:54:59 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REPAIR-SERVICE with eureka with status DOWN
+2025-10-08 09:54:59 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897499360, current=DOWN, previous=UP]
+2025-10-08 09:54:59 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 09:54:59 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-08 09:54:59 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-08 09:54:59 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 09:54:59 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-10-08 09:55:02 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-10-08 09:55:02 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - deregister  status: 200
+2025-10-08 09:55:02 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-10-08 09:55:08 INFO  [main] c.c.r.RepairServiceApplication - Starting RepairServiceApplication using Java 21.0.6 with PID 35476 (C:\Users\jatha\Projects\CosmaCare\repair-service\target\classes started by jatha in C:\Users\jatha\Projects\CosmaCare\repair-service)
+2025-10-08 09:55:08 DEBUG [main] c.c.r.RepairServiceApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-10-08 09:55:08 INFO  [main] c.c.r.RepairServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 09:55:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-08 09:55:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144 ms. Found 1 MongoDB repository interface.
+2025-10-08 09:55:11 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc4891b-216b-320a-adc9-9e663b1988bf
+2025-10-08 09:55:12 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-10-08 09:55:12 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 09:55:12 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-08 09:55:12 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 09:55:12 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3642 ms
+2025-10-08 09:55:13 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='repair_admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@4adcc981], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@73aae7a, com.mongodb.Jep395RecordCodecProvider@3856d0cb, com.mongodb.KotlinCodecProvider@2125535d]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@d190639], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-08 09:55:13 INFO  [cluster-ClusterId{value='68e5e7a901ef6331ef73c369', description='null'}-localhost:27017] org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=49548000, minRoundTripTimeNanos=0}
+2025-10-08 09:55:14 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-08 09:55:17 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-10-08 09:55:17 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-08 09:55:17 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-10-08 09:55:17 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-10-08 09:55:17 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-10-08 09:55:17 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 09:55:18 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-10-08 09:55:18 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-10-08 09:55:18 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-10-08 09:55:18 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-10-08 09:55:18 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-10-08 09:55:18 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-10-08 09:55:18 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-10-08 09:55:19 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-10-08 09:55:19 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-10-08 09:55:19 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-10-08 09:55:19 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1759897519063 with initial instances count: 5
+2025-10-08 09:55:19 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPAIR-SERVICE with eureka with status UP
+2025-10-08 09:55:19 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897519084, current=UP, previous=STARTING]
+2025-10-08 09:55:19 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 09:55:19 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-10-08 09:55:19 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-10-08 09:55:19 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 09:55:19 INFO  [main] c.c.r.RepairServiceApplication - Started RepairServiceApplication in 11.479 seconds (process running for 12.28)
+2025-10-08 09:55:26 INFO  [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 09:55:26 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 09:55:26 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-08 10:00:18 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:01:30 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REPAIR-SERVICE with eureka with status DOWN
+2025-10-08 10:01:30 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897890213, current=DOWN, previous=UP]
+2025-10-08 10:01:30 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 10:01:30 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-08 10:01:30 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 10:01:30 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-08 10:01:30 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-10-08 10:01:33 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-10-08 10:01:33 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - deregister  status: 200
+2025-10-08 10:01:33 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-10-08 10:01:36 INFO  [main] c.c.r.RepairServiceApplication - Starting RepairServiceApplication using Java 21.0.6 with PID 34488 (C:\Users\jatha\Projects\CosmaCare\repair-service\target\classes started by jatha in C:\Users\jatha\Projects\CosmaCare\repair-service)
+2025-10-08 10:01:36 DEBUG [main] c.c.r.RepairServiceApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-10-08 10:01:36 INFO  [main] c.c.r.RepairServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 10:01:37 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-08 10:01:38 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134 ms. Found 1 MongoDB repository interface.
+2025-10-08 10:01:38 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc4891b-216b-320a-adc9-9e663b1988bf
+2025-10-08 10:01:39 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-10-08 10:01:39 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 10:01:39 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-08 10:01:39 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 10:01:39 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2563 ms
+2025-10-08 10:01:39 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='repair_admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@77a85e76], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@2cebf82f, com.mongodb.Jep395RecordCodecProvider@34fc315d, com.mongodb.KotlinCodecProvider@34f48d1]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@36a1fd20], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-08 10:01:39 INFO  [cluster-ClusterId{value='68e5e92b92f678d0fbc5a3bf', description='null'}-localhost:27017] org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22870200, minRoundTripTimeNanos=0}
+2025-10-08 10:01:40 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-08 10:01:42 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-10-08 10:01:42 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-08 10:01:42 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-10-08 10:01:42 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-10-08 10:01:43 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-10-08 10:01:43 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-10-08 10:01:44 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-10-08 10:01:44 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-10-08 10:01:44 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-10-08 10:01:44 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1759897904039 with initial instances count: 5
+2025-10-08 10:01:44 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPAIR-SERVICE with eureka with status UP
+2025-10-08 10:01:44 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897904103, current=UP, previous=STARTING]
+2025-10-08 10:01:44 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 10:01:44 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-10-08 10:01:44 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-10-08 10:01:44 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 10:01:44 INFO  [main] c.c.r.RepairServiceApplication - Started RepairServiceApplication in 8.458 seconds (process running for 9.179)
+2025-10-08 10:02:53 INFO  [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 10:02:53 INFO  [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 10:02:53 INFO  [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-08 10:02:59 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REPAIR-SERVICE with eureka with status DOWN
+2025-10-08 10:02:59 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897979933, current=DOWN, previous=UP]
+2025-10-08 10:02:59 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 10:02:59 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-08 10:02:59 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-08 10:02:59 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 10:02:59 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-10-08 10:03:02 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-10-08 10:03:02 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - deregister  status: 200
+2025-10-08 10:03:02 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-10-08 10:03:06 INFO  [main] c.c.r.RepairServiceApplication - Starting RepairServiceApplication using Java 21.0.6 with PID 13260 (C:\Users\jatha\Projects\CosmaCare\repair-service\target\classes started by jatha in C:\Users\jatha\Projects\CosmaCare\repair-service)
+2025-10-08 10:03:06 DEBUG [main] c.c.r.RepairServiceApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-10-08 10:03:06 INFO  [main] c.c.r.RepairServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 10:03:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-08 10:03:08 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 191 ms. Found 1 MongoDB repository interface.
+2025-10-08 10:03:09 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc4891b-216b-320a-adc9-9e663b1988bf
+2025-10-08 10:03:10 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-10-08 10:03:10 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 10:03:10 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-08 10:03:10 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 10:03:10 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3419 ms
+2025-10-08 10:03:11 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='repair_admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@4910afdf], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@764db16c, com.mongodb.Jep395RecordCodecProvider@45cb5307, com.mongodb.KotlinCodecProvider@1c8e2850]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@50ac1249], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-08 10:03:11 INFO  [cluster-ClusterId{value='68e5e9875996c80706f38791', description='null'}-localhost:27017] org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54961000, minRoundTripTimeNanos=0}
+2025-10-08 10:03:12 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-08 10:03:15 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-10-08 10:03:15 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-08 10:03:15 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-10-08 10:03:15 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-10-08 10:03:15 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-10-08 10:03:15 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-10-08 10:03:16 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-10-08 10:03:16 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-10-08 10:03:16 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-10-08 10:03:16 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1759897996581 with initial instances count: 6
+2025-10-08 10:03:16 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPAIR-SERVICE with eureka with status UP
+2025-10-08 10:03:16 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759897996601, current=UP, previous=STARTING]
+2025-10-08 10:03:16 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 10:03:16 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-10-08 10:03:16 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-10-08 10:03:16 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 10:03:16 INFO  [main] c.c.r.RepairServiceApplication - Started RepairServiceApplication in 10.872 seconds (process running for 11.693)
+2025-10-08 10:03:16 INFO  [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 10:03:16 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 10:03:16 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-08 10:04:18 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REPAIR-SERVICE with eureka with status DOWN
+2025-10-08 10:04:18 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759898058066, current=DOWN, previous=UP]
+2025-10-08 10:04:18 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 10:04:18 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-08 10:04:18 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 10:04:18 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-08 10:04:18 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-10-08 10:04:21 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-10-08 10:04:21 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - deregister  status: 200
+2025-10-08 10:04:21 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-10-08 10:04:24 INFO  [main] c.c.r.RepairServiceApplication - Starting RepairServiceApplication using Java 21.0.6 with PID 8760 (C:\Users\jatha\Projects\CosmaCare\repair-service\target\classes started by jatha in C:\Users\jatha\Projects\CosmaCare\repair-service)
+2025-10-08 10:04:24 DEBUG [main] c.c.r.RepairServiceApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-10-08 10:04:24 INFO  [main] c.c.r.RepairServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 10:04:26 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-08 10:04:27 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 169 ms. Found 1 MongoDB repository interface.
+2025-10-08 10:04:27 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc4891b-216b-320a-adc9-9e663b1988bf
+2025-10-08 10:04:28 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-10-08 10:04:28 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 10:04:28 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-08 10:04:28 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 10:04:28 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3942 ms
+2025-10-08 10:04:29 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='repair_admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@2759749], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4efed0e0, com.mongodb.Jep395RecordCodecProvider@4ac0ed65, com.mongodb.KotlinCodecProvider@5c7c75fb]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@729d6ee2], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-08 10:04:29 INFO  [cluster-ClusterId{value='68e5e9d5470858aa03de475f', description='null'}-localhost:27017] org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=49969400, minRoundTripTimeNanos=0}
+2025-10-08 10:04:30 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-08 10:04:33 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-10-08 10:04:33 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-08 10:04:33 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-10-08 10:04:33 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-10-08 10:04:33 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-10-08 10:04:33 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:04:34 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-10-08 10:04:34 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-10-08 10:04:34 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-10-08 10:04:34 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-10-08 10:04:34 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-10-08 10:04:34 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-10-08 10:04:34 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-10-08 10:04:35 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-10-08 10:04:35 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-10-08 10:04:35 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-10-08 10:04:35 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1759898075096 with initial instances count: 6
+2025-10-08 10:04:35 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPAIR-SERVICE with eureka with status UP
+2025-10-08 10:04:35 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759898075122, current=UP, previous=STARTING]
+2025-10-08 10:04:35 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 10:04:35 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-10-08 10:04:35 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-10-08 10:04:35 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 10:04:35 INFO  [main] c.c.r.RepairServiceApplication - Started RepairServiceApplication in 11.703 seconds (process running for 12.5)
+2025-10-08 10:04:35 INFO  [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 10:04:35 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 10:04:35 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-08 10:09:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:14:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:19:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:24:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:29:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:34:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:39:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:44:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:49:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:54:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 10:59:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:02:50 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REPAIR-SERVICE with eureka with status DOWN
+2025-10-08 11:02:50 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759901570094, current=DOWN, previous=UP]
+2025-10-08 11:02:50 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 11:02:50 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 11:02:50 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-08 11:02:50 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-08 11:02:50 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-10-08 11:02:53 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-10-08 11:02:53 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - deregister  status: 200
+2025-10-08 11:02:53 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-10-08 11:02:58 INFO  [main] c.c.r.RepairServiceApplication - Starting RepairServiceApplication using Java 21.0.6 with PID 10120 (C:\Users\jatha\Projects\CosmaCare\repair-service\target\classes started by jatha in C:\Users\jatha\Projects\CosmaCare\repair-service)
+2025-10-08 11:02:58 DEBUG [main] c.c.r.RepairServiceApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-10-08 11:02:58 INFO  [main] c.c.r.RepairServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 11:02:59 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-10-08 11:03:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 155 ms. Found 1 MongoDB repository interface.
+2025-10-08 11:03:00 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=7fc4891b-216b-320a-adc9-9e663b1988bf
+2025-10-08 11:03:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-10-08 11:03:01 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 11:03:01 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-08 11:03:01 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 11:03:01 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2788 ms
+2025-10-08 11:03:02 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='repair_admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@4efed0e0], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4ac0ed65, com.mongodb.Jep395RecordCodecProvider@5c7c75fb, com.mongodb.KotlinCodecProvider@729d6ee2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@4adcc981], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-10-08 11:03:02 INFO  [cluster-ClusterId{value='68e5f78e85e632bc69d2cd39', description='null'}-localhost:27017] org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=36586700, minRoundTripTimeNanos=0}
+2025-10-08 11:03:03 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-08 11:03:04 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-10-08 11:03:04 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-10-08 11:03:04 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-10-08 11:03:04 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-10-08 11:03:04 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-10-08 11:03:04 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-10-08 11:03:05 INFO  [main] c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-10-08 11:03:05 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-10-08 11:03:05 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-10-08 11:03:05 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1759901585626 with initial instances count: 6
+2025-10-08 11:03:05 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPAIR-SERVICE with eureka with status UP
+2025-10-08 11:03:05 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1759901585637, current=UP, previous=STARTING]
+2025-10-08 11:03:05 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082: registering service...
+2025-10-08 11:03:05 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-10-08 11:03:05 INFO  [main] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-10-08 11:03:05 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPAIR-SERVICE/repair-service:8082 - registration status: 204
+2025-10-08 11:03:05 INFO  [main] c.c.r.RepairServiceApplication - Started RepairServiceApplication in 7.915 seconds (process running for 8.559)
+2025-10-08 11:03:10 INFO  [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 11:03:10 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 11:03:10 INFO  [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-10-08 11:08:04 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:13:04 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:18:04 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:21:20 INFO  [http-nio-8082-exec-4] c.c.r.service.RepairService - Creating new repair request for userId: 67fa7c95-7518-47a4-817d-76645c610838, username: prashanttt
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] c.c.r.service.RepairService - Saved new repair request with id: 68e5fbd985e632bc69d2cd3a
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] c.c.r.producer.RepairEventProducer - Producing event, RepairCreatedEvent(id=68e5fbd985e632bc69d2cd3a, storeWorkerId=67fa7c95-7518-47a4-817d-76645c610838, storeWorkerUserName=prashanttt, issueType=hey, description=rack get loosed, status=PENDING, assignedTo=technician01, createdAt=2025-10-08T11:21:20.918981)
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = repair-service-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] o.a.k.clients.producer.KafkaProducer - [Producer clientId=repair-service-producer-1] Instantiated an idempotent producer.
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-10-08 11:21:21 INFO  [http-nio-8082-exec-4] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1759902681875
+2025-10-08 11:21:23 INFO  [kafka-producer-network-thread | repair-service-producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=repair-service-producer-1] Cluster ID: s2prjvz1RxSKjupeExLcSQ
+2025-10-08 11:21:23 INFO  [kafka-producer-network-thread | repair-service-producer-1] o.a.k.c.p.i.TransactionManager - [Producer clientId=repair-service-producer-1] ProducerId set to 2002 with epoch 0
+2025-10-08 11:21:23 INFO  [http-nio-8082-exec-4] c.c.r.service.RepairService - RepairCreatedEvent sent for repairId: 68e5fbd985e632bc69d2cd3a
+2025-10-08 11:21:25 INFO  [http-nio-8082-exec-5] c.c.r.service.RepairService - Creating new repair request for userId: 67fa7c95-7518-47a4-817d-76645c610838, username: prashanttt
+2025-10-08 11:21:25 INFO  [http-nio-8082-exec-5] c.c.r.service.RepairService - Saved new repair request with id: 68e5fbdd85e632bc69d2cd3b
+2025-10-08 11:21:25 INFO  [http-nio-8082-exec-5] c.c.r.producer.RepairEventProducer - Producing event, RepairCreatedEvent(id=68e5fbdd85e632bc69d2cd3b, storeWorkerId=67fa7c95-7518-47a4-817d-76645c610838, storeWorkerUserName=prashanttt, issueType=hey, description=rack get loosed, status=PENDING, assignedTo=technician01, createdAt=2025-10-08T11:21:25.207482300)
+2025-10-08 11:21:25 INFO  [http-nio-8082-exec-5] c.c.r.service.RepairService - RepairCreatedEvent sent for repairId: 68e5fbdd85e632bc69d2cd3b
+2025-10-08 11:22:22 INFO  [http-nio-8082-exec-10] c.c.r.service.RepairService - Fetching repairs for workerId: cd824ea1-5f82-460a-89f8-c3511ce0d4a5
+2025-10-08 11:22:22 INFO  [http-nio-8082-exec-10] c.c.r.service.RepairService - Total repairs fetched for workerId cd824ea1-5f82-460a-89f8-c3511ce0d4a5: 0
+2025-10-08 11:22:25 INFO  [http-nio-8082-exec-1] c.c.r.service.RepairService - Fetching repair by repairId: 68e5e4f723097a85aca7ea23
+2025-10-08 11:22:25 INFO  [http-nio-8082-exec-1] c.c.r.service.RepairService - Repair found for repairId: 68e5e4f723097a85aca7ea23
+2025-10-08 11:22:29 INFO  [http-nio-8082-exec-3] c.c.r.service.RepairService - Fetching repairs assigned to assigneeId: technician01
+2025-10-08 11:22:29 INFO  [http-nio-8082-exec-3] c.c.r.service.RepairService - Total repairs fetched for assigneeId technician01: 27
+2025-10-08 11:23:04 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:28:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:33:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:38:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:43:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:48:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:53:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 11:58:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:03:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:08:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:13:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:18:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:23:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:28:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:33:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:38:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:43:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:48:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:53:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 12:58:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 13:03:05 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 13:37:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 13:42:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 13:47:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 13:52:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 13:57:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 14:02:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 14:07:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 14:12:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-10-08 14:17:34 INFO  [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

@@ -5,6 +5,8 @@ import com.cosmacare.security_service.dto.LoginRequest;
 import com.cosmacare.security_service.dto.LoginResponse;
 import com.cosmacare.security_service.dto.UserPrincipal;
 import io.jsonwebtoken.Claims;
+import io.micrometer.core.annotation.Counted;
+import io.micrometer.core.annotation.Timed;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -45,6 +47,8 @@ public class AuthController {
     }*/
 
     @PostMapping("/login")
+    @Timed(value = "auth.login.time", description = "Time taken to authenticate a user")
+    @Counted(value = "auth.login.count", description = "Number of login attempts")
     public ResponseEntity<LoginResponse> login(@RequestBody LoginRequest request) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
@@ -60,6 +64,8 @@ public class AuthController {
     }
 
     @PostMapping("/validate")
+    @Timed(value = "auth.token.validate.time", description = "Time taken to validate a JWT token")
+    @Counted(value = "auth.token.validate.count", description = "Number of token validation requests")
     public ResponseEntity<?> validateToken(@RequestHeader("Authorization") String authHeader) {
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Missing or invalid Authorization header");

@@ -1,4 +1,4 @@
-package com.cosmacare.repair_service.config;
+package com.cosmacare.security_service.config;
 
 import io.micrometer.core.aop.CountedAspect;
 import io.micrometer.core.aop.TimedAspect;

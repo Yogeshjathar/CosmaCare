@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cosmacare</groupId>
-	<artifactId>common-events</artifactId>
+	<artifactId>common-library</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>common-events</name>
-	<description>shared library for cosmacare project </description>
+	<name>common-library</name>
+	<description>Shared library for CosmaCare project</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -35,12 +35,6 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

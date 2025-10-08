@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/repairs")
+@RequestMapping("/testRepairService")
 public class Home {
     @GetMapping({"","/"})
     public String welcome(){
-        return "Cosmacare Repair Service";
+        return "Cosmacare Repair Service Is Live...";
     }
 }

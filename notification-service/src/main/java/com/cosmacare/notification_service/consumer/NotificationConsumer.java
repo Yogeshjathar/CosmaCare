@@ -15,7 +15,7 @@ public class NotificationConsumer {
 
     private final NotificationRepository repository;
 
-    @KafkaListener(topics = "repair-topic", groupId = "notification-group")
+    @KafkaListener(topics = "repair-created", groupId = "notification-group",  containerFactory = "repairKafkaListenerContainerFactory")
     public void consumeMessage(RepairCreatedEvent event) {
         log.info("📩 Notification Service received event for repair: " + event.getId());
 

@@ -9,7 +9,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: notification_admin123
       MONGO_INITDB_DATABASE: notification_db
     ports:
-      - "27029:27017"  
+      - "27019:27017"  # Maps host port 27019 to container's 27017
     volumes:
       - notification_mongo_data:/data/db
 

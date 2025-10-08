@@ -1,4 +1,4 @@
-package com.cosmacare.common_events.events;
+package com.cosmacare.common_library.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

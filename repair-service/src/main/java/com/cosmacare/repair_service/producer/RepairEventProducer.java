@@ -17,6 +17,6 @@ public class RepairEventProducer {
 
     public void sendRepairCreatedEvent(RepairCreatedEvent event) {
         log.info("Producing event, " + event);
-        kafkaTemplate.send("repair-topic", event);
+        kafkaTemplate.send("repair-created", event);
     }
 }
