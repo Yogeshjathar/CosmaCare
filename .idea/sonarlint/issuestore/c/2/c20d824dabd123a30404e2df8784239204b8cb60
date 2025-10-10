@@ -7,6 +7,8 @@ java:S1120"wMake this line start after 4 spaces instead of 8 in order to inden
 java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(•™ÀÜùÿÿÿÿ8ÊöÛ›œ3
 “
 java:S1120$"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Î¶íx8ÊöÛ›œ3
+B
+java:S2325"%Make "baseConfigs" a "static" method.(íÿŠ8Ÿùçœ3
 ^
 java:S1106"AMove this left curly brace to the beginning of next line of code.(ÕŸõÚ8ÒöÛ›œ3
 ^
