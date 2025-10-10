@@ -2,4 +2,4 @@
 *.log
 *.xml
 /.idea/**
-.idea/**
+.idea/
