@@ -1,0 +1,15 @@
+
+“
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(ÜÀÎ'8©åÛ›œ3
+”
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ˆÁèğ8³åÛ›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ïÚƒ8¶åÛ›œ3
+]
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ÜÀÎ'8¶åÛ›œ3
+;
+java:S1451"&Add or update the header of this file.8¾åÛ›œ3
+w
+java:S4174"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ˆÁèğ8ÂåÛ›œ3
+L
+java:S6212"/Declare this local variable with "var" instead.(ˆÁèğ8ÂåÛ›œ3

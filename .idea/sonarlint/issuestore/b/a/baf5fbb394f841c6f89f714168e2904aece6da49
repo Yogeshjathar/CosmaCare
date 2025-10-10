@@ -1,0 +1,37 @@
+
+”
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(¤ğæÉ8ÀéÛ›œ3
+”
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ÜŒˆ’8ÀéÛ›œ3
+”
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(à‰ŞÎ8ÀéÛ›œ3
+”
+java:S1120$"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ı·ÇÖ8ÁéÛ›œ3
+™
+java:S1120+"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ÿ®‰¼ıÿÿÿÿ8ÁéÛ›œ3
+”
+java:S11202"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¿¯ô8ÁéÛ›œ3
+™
+java:S11209"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(‡×õ‰ùÿÿÿÿ8ÁéÛ›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(€÷Ôá8ÑéÛ›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ÇŒÏõ8ÑéÛ›œ3
+c
+java:S1106"AMove this left curly brace to the beginning of next line of code.(”Ê’ùÿÿÿÿ8ÑéÛ›œ3
+^
+java:S1106#"AMove this left curly brace to the beginning of next line of code.(àî­ß8ÒéÛ›œ3
+^
+java:S1106*"AMove this left curly brace to the beginning of next line of code.(‡²Ê8ÒéÛ›œ3
+c
+java:S11061"AMove this left curly brace to the beginning of next line of code.(û‚âéùÿÿÿÿ8ÒéÛ›œ3
+^
+java:S11068"AMove this left curly brace to the beginning of next line of code.(—³¯ç8ÒéÛ›œ3
+;
+java:S1451"&Add or update the header of this file.8×éÛ›œ3
+K
+java:S2208
+".Explicitly import the specific classes needed.(Ñ»ïÒ8ØéÛ›œ3
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ú¥‘³
+Ò
+java:S4605"´'UserController' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(€÷Ôá8½‚¾œ3

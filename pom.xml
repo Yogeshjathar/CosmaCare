@@ -17,12 +17,10 @@
         <module>cosmacare-user-service</module>
         <module>eureka-server</module>
         <module>notification-service</module>
-        <module>repair-service</module>
         <module>reward-service</module>
         <module>security-service</module>
-        <!-- <module>cosmacare_infrastructure</module> -->
+        <module>repair-service</module>
     </modules>
-
 
     <parent>
         <groupId>org.springframework.boot</groupId>

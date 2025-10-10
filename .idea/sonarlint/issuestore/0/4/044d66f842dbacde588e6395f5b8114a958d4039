@@ -1,0 +1,59 @@
+
+”
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(ôì³í8Þ˜Ü›œ3
+™
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(œšþÌùÿÿÿÿ8ß˜Ü›œ3
+š
+java:S1120"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(ÒÎœ¶üÿÿÿÿ8ß˜Ü›œ3
+”
+java:S1120#"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(µÉý:8ß˜Ü›œ3
+•
+java:S1120("xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(ËŸãÎ8ß˜Ü›œ3
+š
+java:S1120>"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(‰š­àüÿÿÿÿ8ß˜Ü›œ3
+™
+java:S1120D"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ýÅá’øÿÿÿÿ8à˜Ü›œ3
+”
+java:S1120I"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(–®Ú¡8à˜Ü›œ3
+n	java:S109&"RAssign this magic number 7 to a well-named constant, and use the constant instead.(à­â8à˜Ü›œ3
+G
+java:S1166="%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ8á˜Ü›œ3
+L
+java:S2325C"*Make "isPublicEndpoint" a "static" method.(ªÑÅÀûÿÿÿÿ8ã˜Ü›œ3
+H
+java:S2325H"&Make "unauthorized" a "static" method.(Õçÿòþÿÿÿÿ8ã˜Ü›œ3
+;	java:S113"'Add a new line at the end of this file.8ã˜Ü›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(è¦‚ï8ç˜Ü›œ3
+c
+java:S1106"AMove this left curly brace to the beginning of next line of code.(‹ËÃóÿÿÿÿÿ8ç˜Ü›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(°¹ˆê8ç˜Ü›œ3
+^
+java:S1106""AMove this left curly brace to the beginning of next line of code.(ïÖ½Å8ç˜Ü›œ3
+c
+java:S1106'"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8ç˜Ü›œ3
+c
+java:S1106="AMove this left curly brace to the beginning of next line of code.(ñ“Š±üÿÿÿÿ8ç˜Ü›œ3
+c
+java:S1106C"AMove this left curly brace to the beginning of next line of code.(ªÑÅÀûÿÿÿÿ8ç˜Ü›œ3
+c
+java:S1106H"AMove this left curly brace to the beginning of next line of code.(Õçÿòþÿÿÿÿ8ç˜Ü›œ3
+;
+java:S1451"&Add or update the header of this file.8µ™Ü›œ3
+L
+java:S6212&"/Declare this local variable with "var" instead.(à­â8»™Ü›œ3
+V
+java:S2221="4Catch a list of specific exception subtypes instead.(ñ“Š±üÿÿÿÿ8¼™Ü›œ3
+k
+java:S1107="IMove this "catch" on the same line that the previous closing curly brace.(ñ“Š±üÿÿÿÿ8ªü¼œœ3
+L
+java:S6212("/Declare this local variable with "var" instead.(ËŸãÎ8¼™Ü›œ3
+@	java:S106:"+Replace this use of System.out by a logger.(ö­ðö
+E	java:S106>"+Replace this use of System.out by a logger.(‰š­àüÿÿÿÿ
+^
+java:S1142"<This method has 4 returns, which is more than the 3 allowed.(‹ËÃóÿÿÿÿÿ8¿™Ü›œ3
+Q
+java:S6212D"/Declare this local variable with "var" instead.(ýÅá’øÿÿÿÿ8À™Ü›œ3
+Û
+java:S4605"½'JwtAuthenticationFilter' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(è¦‚ï8‡Ò¼œœ3

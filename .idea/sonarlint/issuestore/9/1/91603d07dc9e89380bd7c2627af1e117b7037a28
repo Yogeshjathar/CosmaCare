@@ -1,0 +1,25 @@
+
+”
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(æ¨ç†8Ø‚Ü›œ3
+]
+java:S1106
+"AMove this left curly brace to the beginning of next line of code.(Îüå[8Ù‚Ü›œ3
+;
+java:S1451"&Add or update the header of this file.8Ù‚Ü›œ3
+W	java:S139"6Move this trailing comment on the previous empty line.(ŠŠâÇÿÿÿÿÿ8ß‚Ü›œ3
+C
+java:S1068"&Remove this unused "id" private field.(æ¨ç†8¯ÔîÄœ3
+N
+java:S1068"1Remove this unused "storeWorkerId" private field.(¬ú„Ğ8°ÔîÄœ3
+Y
+java:S1068"7Remove this unused "storeWorkerUserName" private field.(ğÔÑËøÿÿÿÿ8°ÔîÄœ3
+J
+java:S1068"-Remove this unused "issueType" private field.(•›Ñ«8°ÔîÄœ3
+Q
+java:S1068"/Remove this unused "description" private field.(ÇÓæâıÿÿÿÿ8±ÔîÄœ3
+L
+java:S1068"*Remove this unused "status" private field.(ŠŠâÇÿÿÿÿÿ8±ÔîÄœ3
+P
+java:S1068".Remove this unused "assignedTo" private field.(Í×ÖÓıÿÿÿÿ8±ÔîÄœ3
+O
+java:S1068"-Remove this unused "createdAt" private field.(¯‰‡ƒıÿÿÿÿ8±ÔîÄœ3

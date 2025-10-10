@@ -1,0 +1,16 @@
+
+”
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(Òå­8óõÛ›œ3
+™
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(´éÔúÿÿÿÿ8óõÛ›œ3
+™
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(£Ê…şÿÿÿÿ8óõÛ›œ3
+c
+java:S1106
+"AMove this left curly brace to the beginning of next line of code.(ÿÛôŸşÿÿÿÿ8öõÛ›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Òå­8öõÛ›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ü¹Ñ±8öõÛ›œ3
+;
+java:S1451"&Add or update the header of this file.8øõÛ›œ3

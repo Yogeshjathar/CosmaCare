@@ -1,0 +1,50 @@
+
+™
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(’ûêøÿÿÿÿ8ó Ü›œ3
+”
+java:S11205"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(»ãÿ»8ô Ü›œ3
+”
+java:S1120F"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ïÖ½Å8ô Ü›œ3
+š
+java:S1120G"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(àÛá’ÿÿÿÿÿ8õ Ü›œ3
+•
+java:S1120L"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(ËŸãÎ8õ Ü›œ3
+•
+java:S1120S"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(£Ü¸¦8õ Ü›œ3
+n	java:S109J"RAssign this magic number 7 to a well-named constant, and use the constant instead.(à­â8õ Ü›œ3
+B
+java:S1166R"%Either log or rethrow this exception.(”ı¾8÷ Ü›œ3
+;	java:S113"'Add a new line at the end of this file.8ù Ü›œ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.( Õã8ú Ü›œ3
+c
+java:S11064"AMove this left curly brace to the beginning of next line of code.(ø¦¾ãùÿÿÿÿ8û Ü›œ3
+^
+java:S1106E"AMove this left curly brace to the beginning of next line of code.(×ÛáË8û Ü›œ3
+^
+java:S1106F"AMove this left curly brace to the beginning of next line of code.(ïÖ½Å8û Ü›œ3
+c
+java:S1106K"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8û Ü›œ3
+^
+java:S1106R"AMove this left curly brace to the beginning of next line of code.(”ı¾8û Ü›œ3
+;
+java:S1451"&Add or update the header of this file.8¡Ü›œ3
+K
+java:S2208".Explicitly import the specific classes needed.(Ñ»ïÒ8¡Ü›œ3
+V	java:S125""<This block of commented-out lines of code should be removed.(ø¦¾ãùÿÿÿÿ
+L
+java:S62125"/Declare this local variable with "var" instead.(»ãÿ»8”¡Ü›œ3
+<
+java:S1452E"&Remove usage of generic wildcard type.(×ÛáË
+L
+java:S6212J"/Declare this local variable with "var" instead.(à­â8˜¡Ü›œ3
+Q
+java:S2221R"4Catch a list of specific exception subtypes instead.(”ı¾8™¡Ü›œ3
+O
+java:S1108R"2Move this "catch" keyword to a new dedicated line.(”ı¾8™¡Ü›œ3
+L
+java:S6212L"/Declare this local variable with "var" instead.(ËŸãÎ8™¡Ü›œ3
+e
+java:S1128"ORemove this unused import 'org.springframework.security.core.userdetails.User'.(–Ä€
+Ò
+java:S4605"´'AuthController' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.( Õã8Øš‹¾œ3
