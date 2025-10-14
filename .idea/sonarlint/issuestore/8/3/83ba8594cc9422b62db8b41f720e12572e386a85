@@ -1,57 +1,57 @@
 
 “
-java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(Õ½’G8‘ÔÉãœ3
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(Õ½’G8‘ÔÉãœ3
 ™
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(æá“øÿÿÿÿ8’ÔÉãœ3
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(æá“øÿÿÿÿ8’ÔÉãœ3
 ”
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(µ÷„Ê8’ÔÉãœ3
+java:S1120 "wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(µ÷„Ê8’ÔÉãœ3
 ”
-java:S1120<"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(œ¯‹Š8’ÔÉãœ3
+java:S1120?"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(œ¯‹Š8’ÔÉãœ3
 ”
-java:S1120G"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(èÀƒÂ8’ÔÉãœ3
+java:S1120J"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(èÀƒÂ8’ÔÉãœ3
 ”
-java:S1120P"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Šòç…8“ÔÉãœ3
+java:S1120S"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Šòç…8“ÔÉãœ3
 –
-java:S1120T"yMake this line start after 10 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¬Ôï•8“ÔÉãœ3
+java:S1120W"yMake this line start after 10 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¬Ôï•8“ÔÉãœ3
 š
-java:S1120^"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(İÎ¾åûÿÿÿÿ8“ÔÉãœ3
+java:S1120a"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(İÎ¾åûÿÿÿÿ8“ÔÉãœ3
 ”
-java:S1120e"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(í«…8“ÔÉãœ3
+java:S1120h"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(í«…8“ÔÉãœ3
 ”
-java:S1120n"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(…¨Ï‚8“ÔÉãœ3
+java:S1120q"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(…¨Ï‚8“ÔÉãœ3
 •
-java:S1120r"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(‰Ğ¼8”ÔÉãœ3
+java:S1120u"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(‰Ğ¼8”ÔÉãœ3
 š
-java:S1120t"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(È ÅÛøÿÿÿÿ8”ÔÉãœ3
+java:S1120w"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(È ÅÛøÿÿÿÿ8”ÔÉãœ3
 ^
-java:S1106"AMove this left curly brace to the beginning of next line of code.(Ğ¤çÄ8¥ÔÉãœ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Ğ¤çÄ8¥ÔÉãœ3
 ^
-java:S1106"AMove this left curly brace to the beginning of next line of code.(Ãè“ú8¥ÔÉãœ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Ãè“ú8¥ÔÉãœ3
 c
-java:S1106"AMove this left curly brace to the beginning of next line of code.(½©¡‚ûÿÿÿÿ8¥ÔÉãœ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(½©¡‚ûÿÿÿÿ8¥ÔÉãœ3
 ^
-java:S1106;"AMove this left curly brace to the beginning of next line of code.(é”ÊÎ8¥ÔÉãœ3
+java:S1106>"AMove this left curly brace to the beginning of next line of code.(é”ÊÎ8¥ÔÉãœ3
 ^
-java:S1106F"AMove this left curly brace to the beginning of next line of code.(‡ıÕÏ8¥ÔÉãœ3
+java:S1106I"AMove this left curly brace to the beginning of next line of code.(‡ıÕÏ8¥ÔÉãœ3
 ^
-java:S1106O"AMove this left curly brace to the beginning of next line of code.(èÎ»ø8§ÔÉãœ3
+java:S1106R"AMove this left curly brace to the beginning of next line of code.(èÎ»ø8§ÔÉãœ3
 ^
-java:S1106]"AMove this left curly brace to the beginning of next line of code.( ìâä8§ÔÉãœ3
+java:S1106`"AMove this left curly brace to the beginning of next line of code.( ìâä8§ÔÉãœ3
 ^
-java:S1106d"AMove this left curly brace to the beginning of next line of code.(­ù„™8§ÔÉãœ3
+java:S1106g"AMove this left curly brace to the beginning of next line of code.(­ù„™8§ÔÉãœ3
 c
-java:S1106m"AMove this left curly brace to the beginning of next line of code.(ú¾Âœıÿÿÿÿ8§ÔÉãœ3
+java:S1106p"AMove this left curly brace to the beginning of next line of code.(ú¾Âœıÿÿÿÿ8§ÔÉãœ3
 ^
-java:S1106q"AMove this left curly brace to the beginning of next line of code.(é¡âö8¨ÔÉãœ3
+java:S1106t"AMove this left curly brace to the beginning of next line of code.(é¡âö8¨ÔÉãœ3
 ^
-java:S1106s"AMove this left curly brace to the beginning of next line of code.(å¥‡8¨ÔÉãœ3
-;
-java:S1451"&Add or update the header of this file.8¬ÔÉãœ3
+java:S1106v"AMove this left curly brace to the beginning of next line of code.(å¥‡8¨ÔÉãœ3
 N
-java:S1172",Remove this unused method parameter "roles".(½©¡‚ûÿÿÿÿ8×ÔÉãœ3
+java:S1172",Remove this unused method parameter "roles".(½©¡‚ûÿÿÿÿ8×ÔÉãœ3
+L
+java:S6212+"/Declare this local variable with "var" instead.(ÊßÔâ8ş‘‹3
 9
-java:S2211S"Specify a type for: 'r'(è˜Ğ¯ÿÿÿÿÿ8îÔÉãœ3
+java:S2211V"Specify a type for: 'r'(è˜Ğ¯ÿÿÿÿÿ8îÔÉãœ3
 N
-java:S1108s"1Move this "else" keyword to a new dedicated line.(å¥‡8…ÕÉãœ3
+java:S1108v"1Move this "else" keyword to a new dedicated line.(å¥‡8…ÕÉãœ3
 Ñ
-java:S4605"³'RepairService' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(Ğ¤çÄ8”ÕÉãœ3
+java:S4605"³'RepairService' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(Ğ¤çÄ8”ÕÉãœ3

@@ -24,6 +24,17 @@ spring:
     application:
         name: notification-service
 
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: jatharyv@gmail.com
+        password: imny fywp qxvs brpv
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
     data:
         mongodb:
             host: localhost
@@ -60,3 +71,4 @@ management:
                 enabled: true
         enable:
             all=true:
+

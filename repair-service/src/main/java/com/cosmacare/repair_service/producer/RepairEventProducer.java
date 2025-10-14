@@ -22,16 +22,16 @@ public class RepairEventProducer {
         ProducerRecord<String, RepairCreatedEvent> record =
                 new ProducerRecord<>(TOPIC, key, event);
 
-        log.info("🚀 Sending RepairCreatedEvent to Kafka | Topic: {}, Key: {}, Event: {}", TOPIC, key, event);
+        log.info("Sending RepairCreatedEvent to Kafka | Topic: {}, Key: {}, Event: {}", TOPIC, key, event);
 
         kafkaTemplate.send(record).whenComplete((result, ex) -> {
             if (ex == null) {
-                log.info("✅ Successfully sent RepairCreatedEvent with key={} to partition={}, offset={}",
+                log.info("Successfully sent RepairCreatedEvent with key={} to partition={}, offset={}",
                         key,
                         result.getRecordMetadata().partition(),
                         result.getRecordMetadata().offset());
             } else {
-                log.error("❌ Failed to send RepairCreatedEvent with key={} due to {}", key, ex.getMessage(), ex);
+                log.error("Failed to send RepairCreatedEvent with key={} due to {}", key, ex.getMessage(), ex);
             }
         });
     }

@@ -8,7 +8,7 @@ java:S1120!"wMake this line start after 4 spaces instead of 8 in order to inden
 ™
 java:S1120*"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¤ ’«şÿÿÿÿ8…¢ãœ3
 J
-java:S2325"-Make "baseConsumerConfigs" a "static" method.(³ôïò8®…¢ãœ3
+java:S2325"-Make "baseConsumerConfigs" a "static" method.(³ôïò8 µûèœ3
 ^
 java:S1106"AMove this left curly brace to the beginning of next line of code.(É—ÍÚ8´…¢ãœ3
 ^
@@ -17,7 +17,5 @@ c
 java:S1106 "AMove this left curly brace to the beginning of next line of code.(É®Äªûÿÿÿÿ8´…¢ãœ3
 c
 java:S1106)"AMove this left curly brace to the beginning of next line of code.(€øÖúÿÿÿÿ8´…¢ãœ3
-;
-java:S1451"&Add or update the header of this file.8å‡¢ãœ3
 W	java:S139"6Move this trailing comment on the previous empty line.(›Ôßµúÿÿÿÿ8Œˆ¢ãœ3
 W	java:S139$"6Move this trailing comment on the previous empty line.(Û±Úüúÿÿÿÿ8™ˆ¢ãœ3

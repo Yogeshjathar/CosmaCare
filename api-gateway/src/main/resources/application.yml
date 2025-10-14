@@ -44,7 +44,7 @@ spring:
         - id: repair-service
           uri: lb://repair-service
           predicates:
-            - Path=/api/repair/**
+            - Path=/api/repair/**, /testRepairService
           filters:
             - name: Retry
               args:

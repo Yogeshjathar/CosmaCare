@@ -66,7 +66,7 @@ public class JwtAuthenticationFilter implements GlobalFilter {
 
     private boolean isPublicEndpoint(ServerHttpRequest request) {
         String path = request.getPath().toString();
-        return path.contains("/auth") || path.contains("/public");
+        return path.contains("/auth") || path.contains("/public") || path.contains("/api/user/register");
     }
 
     private Mono<Void> unauthorized(ServerWebExchange exchange, String message) {

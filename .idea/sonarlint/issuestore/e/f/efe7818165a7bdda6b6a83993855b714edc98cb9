@@ -1,19 +1,32 @@
 
-“
-java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(ïóä,8â“´åœ3
-“
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ƒ×‘Y8ã“´åœ3
 ”
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(²‚™ß8ã“´åœ3
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(¤’»Œ8´ÎÇêœ3
+“
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ƒ×‘Y8´ÎÇêœ3
+™
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(´¹šşÿÿÿÿ8´ÎÇêœ3
+–
+java:S1120"yMake this line start after 10 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)( ¢Ë8´ÎÇêœ3
+›
+java:S1120"yMake this line start after 12 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(¤†¨ûÿÿÿÿ8µÎÇêœ3
+–
+java:S1120""yMake this line start after 12 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(±€Õİ8µÎÇêœ3
 ^
-java:S1106
-"AMove this left curly brace to the beginning of next line of code.(ó¡€8è“´åœ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ó¡€8¼ÎÇêœ3
 ]
-java:S1106"AMove this left curly brace to the beginning of next line of code.(øÙ8è“´åœ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(øÙ8¼ÎÇêœ3
 c
-java:S1106"AMove this left curly brace to the beginning of next line of code.(Éàğ–üÿÿÿÿ8è“´åœ3
-;
-java:S1451"&Add or update the header of this file.8é“´åœ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Éàğ–üÿÿÿÿ8¼ÎÇêœ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.( ¢Ë8¼ÎÇêœ3
+^
+java:S1106!"AMove this left curly brace to the beginning of next line of code.(å¥‡8¼ÎÇêœ3
+\
+java:S6213":Rename this variable to not match a restricted identifier.(‹óÎÿÿÿÿÿ8ÉÎÇêœ3
+W	java:S139"6Move this trailing comment on the previous empty line.(´¹šşÿÿÿÿ8ÉÎÇêœ3
+D
+java:S2211""Specify a type for: 'result', 'ex'(Ÿ¤œéıÿÿÿÿ8ËÎÇêœ3
+N
+java:S1108!"1Move this "else" keyword to a new dedicated line.(å¥‡8ÍÎÇêœ3
 ×
-java:S4605
-"¹'RepairEventProducer' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(ó¡€8öÏøçœ3
+java:S4605"¹'RepairEventProducer' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(ó¡€8ĞÎÇêœ3
