@@ -131,7 +131,6 @@ public class RepairService {
                 }));
 
         log.info("Repair found for repairId: {}", repairId);
-
         meterRegistry.counter("repair.fetch.byId.total").increment();
         return repair;
     }
