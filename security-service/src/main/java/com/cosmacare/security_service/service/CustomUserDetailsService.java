@@ -1,13 +1,11 @@
 package com.cosmacare.security_service.service;
 
+import com.cosmacare.security_service.client.UserServiceClient;
 import com.cosmacare.security_service.dto.UserDTO;
 import com.cosmacare.security_service.dto.UserPrincipal;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -22,14 +20,17 @@ import java.util.UUID;
 public class CustomUserDetailsService implements UserDetailsService {
 
     private final RestTemplate restTemplate;
+    private final UserServiceClient userServiceClient;
 
-    public CustomUserDetailsService(RestTemplate restTemplate) {
+    public CustomUserDetailsService(RestTemplate restTemplate, UserServiceClient userServiceClient) {
         this.restTemplate = restTemplate;
+        this.userServiceClient = userServiceClient;
     }
 
     @CircuitBreaker(name = "userService", fallbackMethod = "fallbackUser")
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+/*      // Inter-service communication Using rest template
         String url = "http://cosmacare-user-service/api/user/getUserByUsername/" + username;
 
         ResponseEntity<UserDTO> response = restTemplate.getForEntity(url, UserDTO.class);
@@ -37,11 +38,21 @@ public class CustomUserDetailsService implements UserDetailsService {
         if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
             UserDTO user = response.getBody();
 
-/*            return User.builder()
-                    .username(user.getUsername())
-                    .password(user.getPassword())
-                    .roles(user.getRole()) // assumes role is a simple string like "ADMIN"
-                    .build();*/
+            return new UserPrincipal(
+                    user.getUserId(),
+                    user.getUsername(),
+                    user.getPassword(),
+                    List.of(new SimpleGrantedAuthority("ROLE_" + user.getRole()))
+            );
+        }
+
+        throw new UsernameNotFoundException("User not found: " + username);
+*/
+
+        // // Inter-service communication Using feign client
+        UserDTO user = userServiceClient.getUserByUsername(username);
+
+        if (user != null) {
             return new UserPrincipal(
                     user.getUserId(),
                     user.getUsername(),

@@ -1,5 +1,6 @@
 package com.cosmacare.security_service.config;
 
+
 import com.cosmacare.security_service.Security.JwtAuthenticationEntryPoint;
 import com.cosmacare.security_service.Security.JwtAuthenticationFilter;
 import com.cosmacare.security_service.service.CustomUserDetailsService;
@@ -66,7 +67,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/login", "/auth/validate","/api/user/register", "/swagger-ui/index.html", "/swagger-ui/**").permitAll()
+                        .requestMatchers("/auth/login", "/auth/validate", "/swagger-ui/index.html", "/swagger-ui/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling(ex -> ex.authenticationEntryPoint(jwtAuthenticationEntryPoint))
