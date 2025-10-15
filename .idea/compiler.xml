@@ -30,8 +30,8 @@
         <module name="repair-service" />
         <module name="reward-service" />
         <module name="notification-service" />
-        <module name="security-service" />
         <module name="cosmacare-user-service" />
+        <module name="security-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
