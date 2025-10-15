@@ -1,6 +1,6 @@
 package com.cosmacare.notification_service.config;
 
-import com.cosmacare.notification_service.dto.RepairCreatedEvent;
+import com.cosmacare.notification_service.entity.RepairCreatedEvent;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;

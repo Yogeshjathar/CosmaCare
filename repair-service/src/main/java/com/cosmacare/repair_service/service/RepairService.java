@@ -2,10 +2,12 @@ package com.cosmacare.repair_service.service;
 
 import com.cosmacare.repair_service.entity.Repair;
 import com.cosmacare.repair_service.entity.RepairCreatedEvent;
+import com.cosmacare.repair_service.exceptions.ResourceNotFoundExceptions;
 import com.cosmacare.repair_service.producer.RepairEventProducer;
 import com.cosmacare.repair_service.repository.RepairRepository;
 import lombok.extern.slf4j.Slf4j;
 import io.micrometer.core.instrument.MeterRegistry;
+import org.apache.kafka.common.errors.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -64,6 +66,11 @@ public class RepairService {
         List<Repair> repairs = repairRepository.findByStoreWorkerId(workerId);
         log.info("Total repairs fetched for workerId {}: {}", workerId, repairs.size());
 
+        if (repairs == null || repairs.isEmpty()) {
+            log.warn("No repairs found for workerId: {}", workerId);
+            throw new ResourceNotFoundExceptions("No repairs found for worker with ID: " + workerId);
+        }
+
         // Metric for monitoring fetches
         meterRegistry.counter("repair.fetch.byWorker.total").increment();
 
@@ -75,6 +82,11 @@ public class RepairService {
         List<Repair> repairs = repairRepository.findByAssignedTo(assigneeId);
         log.info("Total repairs fetched for assigneeId {}: {}", assigneeId, repairs.size());
 
+        if (repairs == null || repairs.isEmpty()) {
+            log.warn("No repairs found for assigneeId: {}", assigneeId);
+            throw new ResourceNotFoundExceptions("No repairs assigned to user with ID: " + assigneeId);
+        }
+
         meterRegistry.counter("repair.fetch.byAssignee.total").increment();
         return repairs;
     }
@@ -82,22 +94,19 @@ public class RepairService {
     public Optional<Repair> updateRepairStatus(String repairId, String status) {
         log.info("Updating repair status for repairId: {} to status: {}", repairId, status);
 
-        Optional<Repair> optionalRepair = repairRepository.findById(repairId);
-        optionalRepair.ifPresent(r -> {
-            r.setStatus(status);
-            r.setUpdatedAt(LocalDateTime.now());
-            repairRepository.save(r);
-            log.info("Repair status updated for repairId: {} to {}", repairId, status);
+        Repair repair = repairRepository.findById(repairId)
+                .orElseThrow(() -> {
+                    log.warn("Repair not found with id: {}", repairId);
+                    return new ResourceNotFoundExceptions("Repair not found with ID: " + repairId);
+                });
 
-            // Increment metric for status updates
-            meterRegistry.counter("repair.status.update.total", "status", status).increment();
-        });
+        repair.setStatus(status);
+        repair.setUpdatedAt(LocalDateTime.now());
+        Repair updatedRepair = repairRepository.save(repair);
+        log.info("Repair status updated for repairId: {} to {}", repairId, status);
 
-        if (optionalRepair.isEmpty()) {
-            log.warn("Repair not found with id: {}", repairId);
-        }
-
-        return optionalRepair;
+        meterRegistry.counter("repair.status.update.total", "status", status).increment();
+        return Optional.of(updatedRepair);
     }
 
     public List<Repair> getAllRepairsRequests() {
@@ -105,13 +114,21 @@ public class RepairService {
         List<Repair> repairs = repairRepository.findAll();
         log.info("Total repair requests fetched: {}", repairs.size());
 
+        if (repairs == null || repairs.isEmpty()) {
+            log.warn("No repair requests found in the system");
+            throw new ResourceNotFoundExceptions("No repair requests available at the moment.");
+        }
+
         meterRegistry.counter("repair.fetch.all.total").increment();
         return repairs;
     }
 
     public Optional<Repair> getByRepairsId(String repairId) {
         log.info("Fetching repair by repairId: {}", repairId);
-        Optional<Repair> repair = repairRepository.findById(repairId);
+        Optional<Repair> repair = Optional.ofNullable(repairRepository.findById(repairId)
+                .orElseThrow(() -> {
+                    throw new ResourceNotFoundExceptions("No repairs found for worker with ID: " + repairId);
+                }));
 
         if (repair.isPresent()) {
             log.info("Repair found for repairId: {}", repairId);
