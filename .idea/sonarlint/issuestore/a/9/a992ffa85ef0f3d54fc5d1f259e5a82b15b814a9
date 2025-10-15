@@ -13,3 +13,7 @@ w
 java:S4174"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ˆÁèğ8ÂåÛ›œ3
 L
 java:S6212"/Declare this local variable with "var" instead.(ˆÁèğ8ÂåÛ›œ3
+Q
+java:S6212"/Declare this local variable with "var" instead.(£´Ú÷şÿÿÿÿ8‹€ƒçœ3
+Q
+java:S6212"/Declare this local variable with "var" instead.(Î°‡“ùÿÿÿÿ8€ƒçœ3

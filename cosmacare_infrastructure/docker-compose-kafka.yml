@@ -1,36 +1,189 @@
-version: "3.8"
-services:
-  zookeeper:
-    image: confluentinc/cp-zookeeper:7.2.1
-    container_name: my-zookeeper
-    restart: always
-    environment:
-      ZOOKEEPER_CLIENT_PORT: 2181
-      ZOOKEEPER_TICK_TIME: 2000
-    ports:
-      - "2181:2181"
-    volumes:
-      - zookeeper_data:/var/lib/zookeeper/data
+name: lenses-ce
 
-  kafka:
-    image: confluentinc/cp-kafka:7.2.1
-    container_name: my-kafka-repair
-    restart: always
-    depends_on:
-      - zookeeper
-    ports:
-      - "9092:9092"
+services:
+  lenses-hq:
+    image: lensesio/lenses-hq:6.0
+    pull_policy: always
+    command: /app/config.yaml
     environment:
-      KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
-      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      - ACCEPT_EULA=true
+    ports:
+      - 9991:9991
+    depends_on:
+      postgres:
+        condition: service_healthy
+      create-configs:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "lenses-hq", "is-up", "lenses-hq:9991"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
     volumes:
-      - kafka_data:/var/lib/kafka/data
+      - lenses-hq-volume:/app
+
+  lenses-agent:
+    image: lensesio/lenses-agent:6.0
+    pull_policy: always
+    environment:
+      DEMO_HQ_URL: http://lenses-hq:9991
+      DEMO_HQ_USER: admin
+      DEMO_HQ_PASSWORD: admin
+      DEMO_AGENTKEY_PATH: /mnt/settings/DEMO_AGENTKEY
+      LENSES_HEAP_OPTS: -Xmx1536m -Xms512m
+    depends_on:
+      postgres:
+        condition: service_healthy
+      lenses-hq:
+        condition: service_healthy
+      create-configs:
+        condition: service_completed_successfully
+    volumes:
+      - lenses-agent-volume:/mnt/settings
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: lenses
+      POSTGRES_PASSWORD: lenses
+    depends_on:
+      create-configs:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lenses"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres-volume:/docker-entrypoint-initdb.d
+
+  demo-kafka:
+    image: lensesio/fast-data-dev:3.9.0
+    hostname: demo-kafka
+    environment:
+      ADV_HOST: demo-kafka
+      RUNNING_SAMPLEDATA: 1
+      RUNTESTS: 0
+      KAFKA_LISTENERS: PLAINTEXT://:9092,DOCKERCOMPOSE://:19092,CONTROLLER://:16062
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,DOCKERCOMPOSE://demo-kafka:19092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: >
+        DOCKERCOMPOSE:PLAINTEXT,CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,
+        SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+      DISABLE: debezium-mongodb,debezium-mysql,debezium-postgres,debezium-sqlserver,debezium-jdbc
+    ports:
+      - 9092:9092
+      - 8181:8081   # remapped Schema Registry port to avoid conflict
+    # volumes:
+    #   - kafka-data-volume:/data
+
+  create-configs:
+    image: busybox
+    command: >
+      sh -c '
+        printenv hq.config.yaml > /hq/config.yaml;
+        printenv agent.lenses.conf > /agent/lenses.conf;
+        printenv agent.provisioning.yaml > /agent/provisioning.yaml;
+        printenv postgres.init.sql > /postgres/init.sql
+      '
+    environment:
+      ACCEPT_EULA: "true"   # ensure the variable is available
+      hq.config.yaml: |
+        http:
+          address: :9991
+          secureSessionCookies: false
+        auth:
+          administrators:
+            - admin
+          users:
+           - username: admin
+             password: $$2a$$10$$DPQYpxj4Y2iTWeuF1n.ItewXnbYXh5/E9lQwDJ/cI/.gBboW2Hodm
+        agents:
+          address: :10000
+        database:
+          host: postgres:5432
+          username: lenses
+          password: lenses
+          database: hq
+        logger:
+          mode: text
+        license:
+          key: license_key_2SFZ0BesCNu6NFv0-EOSIvY22ChSzNWXa5nSds2l4z3y7aBgRPKCVnaeMlS57hHNVboR2kKaQ8Mtv1LFt0MPBBACGhDT5If8PmTraUM5xXLz4MYv
+          acceptEULA: true
+      agent.lenses.conf: |
+        lenses.storage.postgres.host="postgres"
+        lenses.storage.postgres.port=5432
+        lenses.storage.postgres.database=agent
+        lenses.storage.postgres.username=lenses
+        lenses.storage.postgres.password=lenses
+        lenses.provisioning.path="/mnt/settings"
+        lenses.sql.state.dir="/data/lsql-state-dir"
+        lenses.secret.file="/data/security.conf"
+        lenses.storage.directory="/data/lenses"
+      agent.provisioning.yaml: |
+        lensesHq:
+          - configuration:
+              agentKey:
+                value: $${LENSESHQ_AGENT_KEY}
+              port:
+                value: 10000
+              server:
+                value: lenses-hq
+            name: lenses-hq
+            tags: ['hq']
+            version: 1
+        kafka:
+          - name: kafka
+            version: 1
+            tags: [ 'kafka', 'dev' ]
+            configuration:
+              metricsType:
+                value: JMX
+              metricsPort:
+                value: 9581
+              kafkaBootstrapServers:
+                value: [PLAINTEXT://demo-kafka:19092]
+              protocol:
+                value: PLAINTEXT
+        confluentSchemaRegistry:
+          - name: schema-registry
+            version: 1
+            tags: [ 'dev' ]
+            configuration:
+              schemaRegistryUrls:
+                value: [http://demo-kafka:8081]
+              metricsType:
+                value: JMX
+              metricsPort:
+                value: 9582
+        connect:
+          - name: dev
+            version: 1
+            tags: [ 'dev' ]
+            configuration:
+              workers:
+                value: [http://demo-kafka:8083]
+              aes256Key:
+                value: 0123456789abcdef0123456789abcdef
+              metricsType:
+                value: JMX
+              metricsPort:
+                value: 9584
+      postgres.init.sql: |
+        CREATE DATABASE hq;
+        CREATE DATABASE agent;
+    volumes:
+      - lenses-hq-volume:/hq
+      - lenses-agent-volume:/agent
+      - postgres-volume:/postgres
 
 volumes:
-  kafka_data:
-  zookeeper_data:
+  lenses-hq-volume:
+  lenses-agent-volume:
+  postgres-volume:
+  postgres-data-volume:
+  kafka-data-volume:
+
+networks:
+  default:
+    name: lenses
