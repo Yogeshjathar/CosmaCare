@@ -1,13 +1,28 @@
 
 ™
-java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(È··ùÿÿÿÿ8Œùô3
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(È··ùÿÿÿÿ8‚ƒ»ó3
 ™
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(–šŒøÿÿÿÿ8ùô3
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(–šŒøÿÿÿÿ8‚ƒ»ó3
+”
+java:S1120F"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(»ç¸¼8‚ƒ»ó3
 ^
-java:S1106"AMove this left curly brace to the beginning of next line of code.(µÒ‘”8‘ùô3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(µÒ‘”8”ƒ»ó3
 ^
-java:S1106"AMove this left curly brace to the beginning of next line of code.(ÔóÈİ8‘ùô3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ÔóÈİ8•ƒ»ó3
+^
+java:S1106E"AMove this left curly brace to the beginning of next line of code.(ªİÚí8•ƒ»ó3
 W
-java:S6213":Rename this variable to not match a restricted identifier.(ÔóÈİ8šùô3
+java:S6213":Rename this variable to not match a restricted identifier.(ÔóÈİ8®ƒ»ó3
+L
+java:S6212("/Declare this local variable with "var" instead.(€ÿ¬ß8²ƒ»ó3
+Q
+java:S6212/"/Declare this local variable with "var" instead.(îåšÿüÿÿÿÿ8µƒ»ó3
+X	java:S125<"<This block of commented-out lines of code should be removed.(Ü»ÁÀ8½ƒ»ó3
+L
+java:S6212F"/Declare this local variable with "var" instead.(»ç¸¼8½ƒ»ó3
+T
+java:S6126G"2Replace this String concatenation with Text block.(Ë¥ãøÿÿÿÿ8Äƒ»ó3
+Q
+java:S6212["/Declare this local variable with "var" instead.(˜áœÊúÿÿÿÿ8Æƒ»ó3
 Ø
-java:S4605"º'NotificationConsumer' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(µÒ‘”8 ùô3
+java:S4605"º'NotificationConsumer' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(µÒ‘”8Íƒ»ó3

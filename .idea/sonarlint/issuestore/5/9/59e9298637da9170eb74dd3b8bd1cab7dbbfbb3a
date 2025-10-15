@@ -27,8 +27,6 @@ c
 java:S1106K"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8û Ü›œ3
 ^
 java:S1106R"AMove this left curly brace to the beginning of next line of code.(”ı¾8û Ü›œ3
-;
-java:S1451"&Add or update the header of this file.8¡Ü›œ3
 K
 java:S2208".Explicitly import the specific classes needed.(Ñ»ïÒ8¡Ü›œ3
 V	java:S125""<This block of commented-out lines of code should be removed.(ø¦¾ãùÿÿÿÿ

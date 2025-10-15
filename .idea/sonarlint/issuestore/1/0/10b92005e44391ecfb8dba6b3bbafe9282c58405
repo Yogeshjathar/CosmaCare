@@ -24,9 +24,7 @@ java:S11066"AMove this left curly brace to the beginning of next line of code.(
 java:S1106;"AMove this left curly brace to the beginning of next line of code.(„óøĞ8£‘Áåœ3
 c
 java:S1106B"AMove this left curly brace to the beginning of next line of code.(Ğäøûÿÿÿÿ8¤‘Áåœ3
-;
-java:S1451"&Add or update the header of this file.8È‘Áåœ3
-l	java:S103F"KSplit this 150 characters long line (which is greater than 120 authorized).(ö–¥’ùÿÿÿÿ8È‘Áåœ3
+l	java:S103F"KSplit this 129 characters long line (which is greater than 120 authorized).(ı¦¨˜şÿÿÿÿ8¯æŸè3
 X
 java:S6437)"6Revoke and change this password, as it is compromised.(¶§‰øÿÿÿÿ8–’Áåœ3
 S
