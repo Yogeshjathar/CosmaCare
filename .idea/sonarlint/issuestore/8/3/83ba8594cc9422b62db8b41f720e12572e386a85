@@ -1,0 +1,65 @@
+
+“
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(Õ½’G8Ûèâ3
+™
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(æá“øÿÿÿÿ8Ûèâ3
+”
+java:S1120""wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(µ÷„Ê8Ûèâ3
+”
+java:S1120A"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(œ¯‹Š8Ûèâ3
+•
+java:S1120F"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(½µñ’8¥…‘ã3
+”
+java:S1120Q"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(èÀƒÂ8Ûèâ3
+•
+java:S1120V"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(ò–Ê±8Áö ã3
+”
+java:S1120_"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Šòç…8Ûèâ3
+›
+java:S1120c"yMake this line start after 18 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(İÎ¾åûÿÿÿÿ8·ù°ã3
+”
+java:S1120q"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(í«…8Ûèâ3
+•
+java:S1120v"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(æ‘Æ8Ï…ã3
+”
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(…¨Ï‚8Ûèâ3
+œ
+java:S1120‚"yMake this line start after 18 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(—É—úÿÿÿÿ8©øèâ3
+–
+java:S1120†"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(‰Ğ¼8Ûèâ3
+›
+java:S1120ˆ"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(È ÅÛøÿÿÿÿ8Ûèâ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Ğ¤çÄ8 Ûèâ3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Ãè“ú8 Ûèâ3
+c
+java:S1106!"AMove this left curly brace to the beginning of next line of code.(½©¡‚ûÿÿÿÿ8 Ûèâ3
+^
+java:S1106@"AMove this left curly brace to the beginning of next line of code.(é”ÊÎ8¡Ûèâ3
+^
+java:S1106E"AMove this left curly brace to the beginning of next line of code.(û­ì”8¡Ûèâ3
+^
+java:S1106P"AMove this left curly brace to the beginning of next line of code.(‡ıÕÏ8¡Ûèâ3
+^
+java:S1106U"AMove this left curly brace to the beginning of next line of code.(û­ì”8¡Ûèâ3
+^
+java:S1106^"AMove this left curly brace to the beginning of next line of code.(èÎ»ø8¡Ûèâ3
+^
+java:S1106p"AMove this left curly brace to the beginning of next line of code.(­ù„™8¡Ûèâ3
+^
+java:S1106u"AMove this left curly brace to the beginning of next line of code.(û­ì”8·…‘ã3
+c
+java:S1106~"AMove this left curly brace to the beginning of next line of code.(ú¾Âœıÿÿÿÿ8ä…ã3
+_
+java:S1106…"AMove this left curly brace to the beginning of next line of code.(é¡âö8Òö ã3
+_
+java:S1106‡"AMove this left curly brace to the beginning of next line of code.(å¥‡8òı®ã3
+N
+java:S1172!",Remove this unused method parameter "roles".(½©¡‚ûÿÿÿÿ8ÅÛèâ3
+L
+java:S6212-"/Declare this local variable with "var" instead.(ÊßÔâ8ÉÛèâ3
+O
+java:S1108‡"1Move this "else" keyword to a new dedicated line.(å¥‡8ØÛèâ3
+Ñ
+java:S4605"³'RepairService' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(Ğ¤çÄ8ŞÛèâ3

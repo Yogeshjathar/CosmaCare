@@ -1,19 +1,19 @@
 
 ”
-java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(íÿŠ8ÂöÛ›œ3
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(íÿŠ8÷¶ûèœ3
 ™
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ş¹† øÿÿÿÿ8ÊöÛ›œ3
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ş¹† øÿÿÿÿ8÷¶ûèœ3
 ™
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(•™ÀÜùÿÿÿÿ8ÊöÛ›œ3
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(•™ÀÜùÿÿÿÿ8÷¶ûèœ3
 “
-java:S1120$"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Î¶íx8ÊöÛ›œ3
+java:S1120$"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Î¶íx8÷¶ûèœ3
+B
+java:S2325"%Make "baseConfigs" a "static" method.(íÿŠ8ƒ·ûèœ3
 ^
-java:S1106"AMove this left curly brace to the beginning of next line of code.(ÕŸõÚ8ÒöÛ›œ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ÕŸõÚ8…·ûèœ3
 ^
-java:S1106"AMove this left curly brace to the beginning of next line of code.(íÿŠ8ÒöÛ›œ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(íÿŠ8…·ûèœ3
 ^
-java:S1106"AMove this left curly brace to the beginning of next line of code.(…ÆÂ8ÒöÛ›œ3
+java:S1106"AMove this left curly brace to the beginning of next line of code.(…ÆÂ8…·ûèœ3
 ^
-java:S1106#"AMove this left curly brace to the beginning of next line of code.(¯’Ÿ­8ÒöÛ›œ3
-;
-java:S1451"&Add or update the header of this file.8ÕöÛ›œ3
+java:S1106#"AMove this left curly brace to the beginning of next line of code.(¯’Ÿ­8…·ûèœ3
