@@ -130,11 +130,7 @@ public class RepairService {
                     throw new ResourceNotFoundExceptions("No repairs found for worker with ID: " + repairId);
                 }));
 
-        if (repair.isPresent()) {
-            log.info("Repair found for repairId: {}", repairId);
-        } else {
-            log.warn("Repair not found for repairId: {}", repairId);
-        }
+        log.info("Repair found for repairId: {}", repairId);
 
         meterRegistry.counter("repair.fetch.byId.total").increment();
         return repair;

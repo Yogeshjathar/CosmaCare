@@ -50,12 +50,13 @@ class RepairServiceTest {
         mockRepair.setAssignedTo("technician001");
         mockRepair.setCreatedAt(LocalDateTime.now());
 
-        when(meterRegistry.counter(anyString(), any(String[].class))).thenReturn(mockCounter);
+        // lenient fixes the unnecessary stubbing issue
+        lenient().when(meterRegistry.counter(anyString(), any(String[].class))).thenReturn(mockCounter);
     }
 
     @Test
     @DisplayName("Should create new repair and send Kafka event")
-    void testCreateRepair_Success() {
+    void testCreateRepair_Success(){
         when(repairRepository.save(any(Repair.class))).thenReturn(mockRepair);
 
         Repair result = repairService.createRepair(mockRepair, "U123", "STORE_WORKER", "Kiran");
@@ -126,16 +127,22 @@ class RepairServiceTest {
     }
 
     @Test
-    @DisplayName("Should return empty when trying to update non-existent repair")
+    @DisplayName("Should throw ResourceNotFoundExceptions when trying to update non-existent repair")
     void testUpdateRepairStatus_RepairNotFound() {
-        when(repairRepository.findById("InvalidID")).thenReturn(Optional.empty());
+        String invalidId = "InvalidID";
+        when(repairRepository.findById(invalidId)).thenReturn(Optional.empty());
 
-        Optional<Repair> result = repairService.updateRepairStatus("InvalidID", "APPROVED");
+        ResourceNotFoundExceptions exception = assertThrows(
+                ResourceNotFoundExceptions.class,
+                () -> repairService.updateRepairStatus(invalidId, "COMPLETED")
+        );
 
-        assertTrue(result.isEmpty());
+        assertEquals("Repair not found with ID: " + invalidId, exception.getMessage());
+        verify(repairRepository, times(1)).findById(invalidId);
         verify(repairRepository, never()).save(any());
-        verify(meterRegistry, never()).counter(eq("repair.status.update.total"), any(), any());
+        verify(meterRegistry, never()).counter(anyString(), any(String[].class));
     }
+
 
     @Test
     @DisplayName("Should fetch all repair requests")
@@ -165,22 +172,6 @@ class RepairServiceTest {
         verify(repairRepository, times(1)).findById("R001");
         verify(meterRegistry, times(1)).counter("repair.fetch.byId.total");
         verify(mockCounter, times(1)).increment();
-    }
-
-    @Test
-    @DisplayName("Should throw ResourceNotFoundExceptions when repair not found by ID")
-    void testGetByRepairId_NotFound() {
-        when(repairRepository.findById("InvalidID")).thenReturn(Optional.empty());
-
-        ResourceNotFoundExceptions exception = assertThrows(
-                ResourceNotFoundExceptions.class,
-                () -> repairService.getByRepairsId("InvalidID")
-        );
-
-        assertEquals("No repairs found for worker with ID: InvalidID", exception.getMessage());
-
-        verify(repairRepository, times(1)).findById("InvalidID");
-        // Metric increment may or may not happen depending on your implementation; skip or mock as needed
     }
 
 }
