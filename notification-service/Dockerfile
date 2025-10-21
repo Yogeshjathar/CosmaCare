@@ -6,7 +6,7 @@ WORKDIR /app
 # Copy the built jar file into the container
 COPY target/*.jar app.jar
 
-EXPOSE 8585
+EXPOSE 8084
 
 # Run the Spring Boot application
 ENTRYPOINT ["java", "-jar", "app.jar"]
