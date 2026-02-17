@@ -1,0 +1,59 @@
+#Port
+server:
+    port: 8081
+
+#eureka :
+#    client :
+#        service-url :
+#            defaultZone : http://localhost:8761/eureka/
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+    instance:
+        prefer-ip-address: true
+        hostname: localhost
+        instance-id: ${spring.application.name}:${server.port}
+
+spring:
+    application:
+        name: cosmacare-user-service
+
+#   MySQL Database Configuration
+    datasource:
+        url: jdbc:mysql://localhost:3306/cosmacareuserdb
+        username: root
+        password: 2002
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+# Prometheus
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+            base-path: /actuator
+    endpoint:
+        prometheus:
+            enabled: true
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+        enable:
+            all=true:
+
+logging:
+    file:
+        name: logs/application.log       # File path for logs
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+        file: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+    level:
+        root: INFO                       # Default logging level
+        com.cosmacare: DEBUG              # package-specific logging
