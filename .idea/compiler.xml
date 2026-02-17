@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
         <module name="eureka-server" />
       </profile>
       <profile name="Annotation profile for common-library" enabled="true">
@@ -17,8 +16,8 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
-        <module name="common-library" />
         <module name="cosmacare-gateway" />
+        <module name="common-library" />
       </profile>
       <profile name="Annotation profile for Cosmacare Platform" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -30,7 +29,6 @@
         <module name="repair-service" />
         <module name="reward-service" />
         <module name="notification-service" />
-        <module name="cosmacare-user-service" />
         <module name="security-service" />
       </profile>
     </annotationProcessing>

@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/api-gateway" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cosmacare-user-service" vcs="" />
-    <mapping directory="$PROJECT_DIR$/repair-service" vcs="Git" />
   </component>
 </project>

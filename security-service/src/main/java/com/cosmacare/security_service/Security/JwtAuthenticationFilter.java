@@ -66,7 +66,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             request.setAttribute("userId", userId);
 
         }
-
         filterChain.doFilter(request, response);
     }
 }

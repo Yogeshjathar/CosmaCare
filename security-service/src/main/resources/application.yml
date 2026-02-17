@@ -24,6 +24,25 @@ spring:
     application:
         name: security-service
 
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        client-id: ${GOOGLE_CLIENT_ID:}
+                        client-secret: ${GOOGLE_CLIENT_SECRET:}
+                        scope:
+                            - openid
+                            - email
+                            - profile
+                        redirect-uri: "{baseUrl}/oauth2/callback/{registrationId}"
+                    github:
+                        client-id: ${GITHUB_CLIENT_ID:}
+                        client-secret: ${GITHUB_CLIENT_SECRET:}
+                        scope:
+                            - user:email
+                        redirect-uri: "{baseUrl}/oauth2/callback/{registrationId}"
+
 resilience4j:
     circuitbreaker:
         instances:

@@ -180,3 +180,11 @@ K
 security-service/Dockerfile,b\e\beffd2c741c532f115d06a3d1191f838beb01116
 O
 notification-service/Dockerfile,a\5\a5693f114eb0276b04eefb1f68707f0ed42da66c
+Š
+Znotification-service/src/main/java/com/cosmacare/notification_service/controller/Home.java,9\1\91900ed26e45d393c918f51a0e012364b9163592
+‚
+Rsecurity-service/src/main/java/com/cosmacare/security_service/controller/Home.java,b\3\b346473395212c564d4b7193f62de0636e29c8b7
+x
+Hapi-gateway/src/main/java/com/cosmacare/api_gateway/controller/Home.java,b\7\b7322e01886b37869c137a8af47c432638236712
+„
+Teureka-server/src/main/java/com/cosmacare/eureka_server/EurekaServerApplication.java,5\c\5c8756356ae7136999c378d551280ba00bead71b
