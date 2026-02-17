@@ -1,0 +1,53 @@
+
+’
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(‹ºö¢úÿÿÿÿ
+
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ÂÔëå
+
+java:S1120""wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¹Ñº¹
+
+java:S1120)"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(äºèæ
+’
+java:S1120-"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(º¸§‰ÿÿÿÿÿ
+’
+java:S11201"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(İäõşÿÿÿÿ
+4	java:S113"'Add a new line at the end of this file.
+a
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(‹ºö¢úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±õ”¦ÿÿÿÿÿ
+W
+java:S1106"AMove this left curly brace to the beginning of next line of code.(×ÇÃê
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(‚ÿ’ùÿÿÿÿ
+W
+java:S1106!"AMove this left curly brace to the beginning of next line of code.(‘ÏÎÁ
+\
+java:S1106("AMove this left curly brace to the beginning of next line of code.(œšúšûÿÿÿÿ
+\
+java:S1106,"AMove this left curly brace to the beginning of next line of code.(»Ì®Œøÿÿÿÿ
+\
+java:S11060"AMove this left curly brace to the beginning of next line of code.(Ì˜ ±üÿÿÿÿ
+`	java:S103"KSplit this 134 characters long line (which is greater than 120 authorized).(Êæ£ç
+7
+java:S1170"!Make this final field static too.(Êæ£ç
+p
+java:S3749"ZAnnotate this member with "@Autowired", "@Resource", "@Inject", or "@Value", or remove it.(Êæ£ç
+P	java:S139"6Move this trailing comment on the previous empty line.(‹ºö¢úÿÿÿÿ
+Q
+java:S6437"6Revoke and change this password, as it is compromised.(ßŒé¡ùÿÿÿÿ
+?
+java:S2143")Use the Java 8 Date and Time API instead.(øÔ÷ò
+D
+java:S2143")Use the Java 8 Date and Time API instead.(÷¹¿¸şÿÿÿÿ
+K
+java:S1874"0Remove this use of "signWith"; it is deprecated.(ßŒé¡ùÿÿÿÿ
+L
+java:S6437#"6Revoke and change this password, as it is compromised.(éÅÖ¯
+D
+java:S1874"".Remove this use of "parser"; it is deprecated.(¹Ñº¹
+K
+java:S1874#"5Remove this use of "setSigningKey"; it is deprecated.(éÅÖ¯
+D
+java:S21431")Use the Java 8 Date and Time API instead.(İäõşÿÿÿÿ
+Ä
+java:S4605"­'JwtUtil' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(×ÇÃê

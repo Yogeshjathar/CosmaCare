@@ -1,0 +1,15 @@
+
+’
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(È··ùÿÿÿÿ
+’
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(«èïøÿÿÿÿ
+
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(’•™ó
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(œ·ÍÉûÿÿÿÿ
+W
+java:S1106"AMove this left curly brace to the beginning of next line of code.(“—ÑÕ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(‹¿¾Êıÿÿÿÿ
+Õ
+java:S4605"¹'NotificationService' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(œ·ÍÉûÿÿÿÿ

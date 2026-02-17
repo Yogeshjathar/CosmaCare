@@ -1,0 +1,61 @@
+
+’
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(Ï‘Òöúÿÿÿÿ
+’
+java:S1120#"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ı²™üÿÿÿÿ
+“
+java:S1120("xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(®Ä÷¹ıÿÿÿÿ
+“
+java:S1120*"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(‡Áöûÿÿÿÿ
+
+java:S1120,"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(§üÒQ
+“
+java:S1120."xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ù˜—£ıÿÿÿÿ
+
+java:S11200"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(…†Â¿
+“
+java:S11203"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Ìàâíıÿÿÿÿ
+
+java:S11207"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(è¼¯«
+l	java:S109("RAssign this magic number 7 to a well-named constant, and use the constant instead.(®Ä÷¹ıÿÿÿÿ
+
+java:S1312"dMake the "logger" logger private static final and rename it to comply with the format "LOG(?:GER)?".(Ï‘Òöúÿÿÿÿ
+4	java:S113"'Add a new line at the end of this file.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±õ”¦ÿÿÿÿÿ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(è´ô‘ùÿÿÿÿ
+V
+java:S1106!"AMove this left curly brace to the beginning of next line of code.(ıù±
+\
+java:S1106'"AMove this left curly brace to the beginning of next line of code.(ğ´®ûÿÿÿÿ
+W
+java:S11062"AMove this left curly brace to the beginning of next line of code.(å¥‡
+\
+java:S1106)"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ
+\
+java:S1106+"AMove this left curly brace to the beginning of next line of code.(€ñÅÁøÿÿÿÿ
+\
+java:S1106-"AMove this left curly brace to the beginning of next line of code.(Èñı¥şÿÿÿÿ
+W
+java:S1106/"AMove this left curly brace to the beginning of next line of code.(”ı¾
+\
+java:S11066"AMove this left curly brace to the beginning of next line of code.(¹ÌäÈúÿÿÿÿ
+e	java:S103<"KSplit this 137 characters long line (which is greater than 120 authorized).(°ñÊéúÿÿÿÿ
+R
+java:S2387"7"logger" is the name of a field in "GenericFilterBean".(Ï‘Òöúÿÿÿÿ
+u
+java:S3749"ZAnnotate this member with "@Autowired", "@Resource", "@Inject", or "@Value", or remove it.(Ï‘Òöúÿÿÿÿ
+G
+java:S11082"1Move this "else" keyword to a new dedicated line.(å¥‡
+J
+java:S2221/"4Catch a list of specific exception subtypes instead.(”ı¾
+M
+java:S1108+"2Move this "catch" keyword to a new dedicated line.(€ñÅÁøÿÿÿÿ
+M
+java:S1108-"2Move this "catch" keyword to a new dedicated line.(Èñı¥şÿÿÿÿ
+H
+java:S1108/"2Move this "catch" keyword to a new dedicated line.(”ı¾
+J
+java:S6212;"/Declare this local variable with "var" instead.(™Ë¡¸üÿÿÿÿ
+Ù
+java:S4605"½'JwtAuthenticationFilter' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(è´ô‘ùÿÿÿÿ

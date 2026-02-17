@@ -1,0 +1,19 @@
+
+”
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(‚Úá8ÙÀ»ÿ´3
+”
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¹Ñº¹8ÙÀ»ÿ´3
+;	java:S113"'Add a new line at the end of this file.8æÀ»ÿ´3
+^
+java:S1106	"AMove this left curly brace to the beginning of next line of code.(×ÇÃê8çÀ»ÿ´3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(øß²8èÀ»ÿ´3
+W
+java:S1258	":Add a constructor to the class, or provide default values.(×ÇÃê8ğÀ»ÿ´3
+K
+java:S1874".Remove this use of "parser"; it is deprecated.(¹Ñº¹8úÀ»ÿ´3
+R
+java:S1874"5Remove this use of "setSigningKey"; it is deprecated.(éÅÖ¯8úÀ»ÿ´3
+R	java:S139"6Move this trailing comment on the previous empty line.(«¶“ü8úÀ»ÿ´3
+Ë
+java:S4605	"­'JwtUtil' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(×ÇÃê8ıÀ»ÿ´3

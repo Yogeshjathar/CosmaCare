@@ -1,0 +1,47 @@
+
+m
+java:S3578;"RRename this method name to match the regular expression: '^test[A-Z][a-zA-Z0-9]*$'(¬¨şÿÿÿÿ
+;
+java:S2698@" Add a message to this assertion.(ãú©ùÿÿÿÿ
+6
+java:S2698A" Add a message to this assertion.(ê™æÅ
+6
+java:S2698B" Add a message to this assertion.(ÅŸÀ
+;
+java:S2698C" Add a message to this assertion.(›£Öÿÿÿÿÿ
+;
+java:S2698H" Add a message to this assertion.(Íª¹øÿÿÿÿ
+;
+java:S2698M" Add a message to this assertion.(¯±½Êûÿÿÿÿ
+;
+java:S2698Z" Add a message to this assertion.(•èĞ€úÿÿÿÿ
+6
+java:S2698[" Add a message to this assertion.(İ®‰
+;
+java:S2698i" Add a message to this assertion.(•èĞ€úÿÿÿÿ
+6
+java:S2698j" Add a message to this assertion.(òœ•£
+g
+java:S3578s"RRename this method name to match the regular expression: '^test[A-Z][a-zA-Z0-9]*$'(òØç
+;
+java:S2698y" Add a message to this assertion.(–ÏÿÖûÿÿÿÿ
+;
+java:S2698z" Add a message to this assertion.(‘§ÃŸıÿÿÿÿ
+m
+java:S6068}"XRemove this and every subsequent useless "eq(...)" invocation; pass the values directly.(çŞíU
+n
+java:S3578ƒ"RRename this method name to match the regular expression: '^test[A-Z][a-zA-Z0-9]*$'(ıãˆÄşÿÿÿÿ
+6
+java:S2698‡" Add a message to this assertion.(‰¿ÿ
+7
+java:S2698Œ" Add a message to this assertion.(ÿ¬ê„
+<
+java:S2698š" Add a message to this assertion.(•èĞ€úÿÿÿÿ
+7
+java:S2698›" Add a message to this assertion.(İ®‰
+n
+java:S3578¤"RRename this method name to match the regular expression: '^test[A-Z][a-zA-Z0-9]*$'(óšŸ±şÿÿÿÿ
+<
+java:S2698©" Add a message to this assertion.(–ÏÿÖûÿÿÿÿ
+7
+java:S2698ª" Add a message to this assertion.(Ïíú

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2025-10-10 10:03:44 INFO  [main] c.c.r.RewardServiceApplicationTests - Starting RewardServiceApplicationTests using Java 21.0.6 with PID 36392 (started by jatha in C:\Users\jatha\Projects\CosmaCare\reward-service)
 2025-10-10 10:03:44 DEBUG [main] c.c.r.RewardServiceApplicationTests - Running with Spring Boot v3.5.4, Spring v6.2.9
 2025-10-10 10:03:44 INFO  [main] c.c.r.RewardServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
@@ -6,6 +7,16 @@
 2025-10-10 10:03:46 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=0172a9da-8a85-399a-8d38-f0744939363d
 2025-10-10 10:03:46 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='rewardadmin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@67a38], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7ef4aceb, com.mongodb.Jep395RecordCodecProvider@31b650e9, com.mongodb.KotlinCodecProvider@683fe7b5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27018], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5b5b8730], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
 2025-10-10 10:03:46 INFO  [cluster-ClusterId{value='68e88caa3457dd46644be33a', description='null'}-localhost:27018] org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27018
+=======
+2026-02-17 12:06:24 INFO  [main] c.c.r.RewardServiceApplicationTests - Starting RewardServiceApplicationTests using Java 21.0.6 with PID 9096 (started by jatha in C:\Users\jatha\Projects\CosmaCare\reward-service)
+2026-02-17 12:06:24 DEBUG [main] c.c.r.RewardServiceApplicationTests - Running with Spring Boot v3.5.4, Spring v6.2.9
+2026-02-17 12:06:24 INFO  [main] c.c.r.RewardServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-17 12:06:26 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-02-17 12:06:26 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 216 ms. Found 1 MongoDB repository interface.
+2026-02-17 12:06:26 INFO  [main] o.s.cloud.context.scope.GenericScope - BeanFactory id=0172a9da-8a85-399a-8d38-f0744939363d
+2026-02-17 12:06:28 INFO  [main] org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='rewardadmin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@58b3eb1], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6d7e2795, com.mongodb.Jep395RecordCodecProvider@78743dd8, com.mongodb.KotlinCodecProvider@752494dd]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27018], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@2986427e], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-02-17 12:06:28 INFO  [cluster-ClusterId{value='69940c6ca5bba2dfbcd7eb80', description='null'}-localhost:27018] org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27018
+>>>>>>> Stashed changes
 com.mongodb.MongoSocketOpenException: Exception opening socket
 	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:85)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
@@ -24,6 +35,7 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:104)
 	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
 	... 3 common frames omitted
+<<<<<<< Updated upstream
 2025-10-10 10:03:48 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 2025-10-10 10:03:49 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
 2025-10-10 10:03:49 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
@@ -39,6 +51,23 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 2025-10-10 10:03:49 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
 2025-10-10 10:03:49 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
 2025-10-10 10:03:50 INFO  [main] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+=======
+2026-02-17 12:06:29 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-17 12:06:31 INFO  [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-02-17 12:06:31 WARN  [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-17 12:06:31 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoints beneath base path '/actuator'
+2026-02-17 12:06:32 INFO  [main] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-02-17 12:06:32 INFO  [main] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-02-17 12:06:32 INFO  [main] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+>>>>>>> Stashed changes
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -227,8 +256,13 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 149 more
 
+<<<<<<< Updated upstream
 2025-10-10 10:03:50 WARN  [main] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 2025-10-10 10:03:50 INFO  [main] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+=======
+2026-02-17 12:06:32 WARN  [main] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+>>>>>>> Stashed changes
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
@@ -370,6 +404,7 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
+<<<<<<< Updated upstream
 2025-10-10 10:03:50 INFO  [main] c.netflix.discovery.DiscoveryClient - Initial registry fetch from primary servers failed
 2025-10-10 10:03:50 WARN  [main] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
 2025-10-10 10:03:50 INFO  [main] c.netflix.discovery.DiscoveryClient - Initial registry fetch from backup servers failed
@@ -381,6 +416,19 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 2025-10-10 10:03:50 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083: registering service...
 2025-10-10 10:03:50 INFO  [main] c.c.r.RewardServiceApplicationTests - Started RewardServiceApplicationTests in 6.273 seconds (process running for 7.265)
 2025-10-10 10:03:50 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+=======
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Initial registry fetch from primary servers failed
+2026-02-17 12:06:32 WARN  [main] c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Initial registry fetch from backup servers failed
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-02-17 12:06:32 INFO  [main] c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1771310192659 with initial instances count: 0
+2026-02-17 12:06:32 INFO  [main] o.s.c.n.e.s.EurekaServiceRegistry - Registering application REWARD-SERVICE with eureka with status UP
+2026-02-17 12:06:32 INFO  [main] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771310192678, current=UP, previous=STARTING]
+2026-02-17 12:06:32 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083: registering service...
+2026-02-17 12:06:32 INFO  [main] c.c.r.RewardServiceApplicationTests - Started RewardServiceApplicationTests in 8.655 seconds (process running for 10.21)
+2026-02-17 12:06:32 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+>>>>>>> Stashed changes
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -442,8 +490,13 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 22 more
 
+<<<<<<< Updated upstream
 2025-10-10 10:03:50 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 2025-10-10 10:03:50 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - registration failed Cannot execute request on any known server
+=======
+2026-02-17 12:06:32 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-02-17 12:06:32 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - registration failed Cannot execute request on any known server
+>>>>>>> Stashed changes
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -459,7 +512,11 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+<<<<<<< Updated upstream
 2025-10-10 10:03:50 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+=======
+2026-02-17 12:06:32 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+>>>>>>> Stashed changes
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -475,11 +532,33 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+<<<<<<< Updated upstream
 2025-10-10 10:03:51 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REWARD-SERVICE with eureka with status DOWN
 2025-10-10 10:03:51 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1760070831041, current=DOWN, previous=UP]
 2025-10-10 10:03:51 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083: registering service...
 2025-10-10 10:03:51 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
 2025-10-10 10:03:51 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+=======
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Redeeming reward with id: INVALID
+2026-02-17 12:06:34 WARN  [main] c.c.r.service.RewardService - Reward with id: INVALID not found
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Adding reward for userId: U123
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Reward created with id: R001 for userId: U123
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Fetching all rewards
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Total rewards fetched: 1
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Fetching rewards for userId: U123
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Total rewards fetched for userId U123: 0
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Fetching all rewards
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Total rewards fetched: 0
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Fetching rewards for userId: U123
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Total rewards fetched for userId U123: 1
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Redeeming reward with id: R001
+2026-02-17 12:06:34 INFO  [main] c.c.r.service.RewardService - Reward with id: R001 redeemed successfully
+2026-02-17 12:06:34 INFO  [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REWARD-SERVICE with eureka with status DOWN
+2026-02-17 12:06:34 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771310194788, current=DOWN, previous=UP]
+2026-02-17 12:06:34 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083: registering service...
+2026-02-17 12:06:34 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-02-17 12:06:34 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+>>>>>>> Stashed changes
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -541,8 +620,13 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 22 more
 
+<<<<<<< Updated upstream
 2025-10-10 10:03:51 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 2025-10-10 10:03:51 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - registration failed Cannot execute request on any known server
+=======
+2026-02-17 12:06:34 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/REWARD-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-02-17 12:06:34 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - registration failed Cannot execute request on any known server
+>>>>>>> Stashed changes
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -558,7 +642,11 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+<<<<<<< Updated upstream
 2025-10-10 10:03:51 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+=======
+2026-02-17 12:06:34 WARN  [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+>>>>>>> Stashed changes
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -574,8 +662,13 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+<<<<<<< Updated upstream
 2025-10-10 10:03:51 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
 2025-10-10 10:03:51 INFO  [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/REWARD-SERVICE/reward-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/REWARD-SERVICE/reward-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+=======
+2026-02-17 12:06:34 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-02-17 12:06:34 INFO  [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/REWARD-SERVICE/reward-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/REWARD-SERVICE/reward-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+>>>>>>> Stashed changes
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -652,8 +745,13 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 37 more
 
+<<<<<<< Updated upstream
 2025-10-10 10:03:51 WARN  [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/REWARD-SERVICE/reward-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 2025-10-10 10:03:51 ERROR [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - de-registration failedCannot execute request on any known server
+=======
+2026-02-17 12:06:34 WARN  [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/REWARD-SERVICE/reward-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-02-17 12:06:34 ERROR [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - DiscoveryClient_REWARD-SERVICE/reward-service:8083 - de-registration failedCannot execute request on any known server
+>>>>>>> Stashed changes
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -684,6 +782,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+<<<<<<< Updated upstream
 2025-10-10 10:03:51 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
 2025-10-10 10:10:39 INFO  [main] c.c.r.RewardServiceApplicationTests - Starting RewardServiceApplicationTests using Java 21.0.6 with PID 33508 (started by jatha in C:\Users\jatha\Projects\CosmaCare\reward-service)
 2025-10-10 10:10:39 DEBUG [main] c.c.r.RewardServiceApplicationTests - Running with Spring Boot v3.5.4, Spring v6.2.9
@@ -1372,3 +1471,6 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 2025-10-10 10:10:47 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+=======
+2026-02-17 12:06:34 INFO  [SpringApplicationShutdownHook] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+>>>>>>> Stashed changes

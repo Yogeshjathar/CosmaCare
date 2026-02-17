@@ -1,0 +1,27 @@
+
+™
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(Õ«Îòÿÿÿÿÿ8íİ÷º¥3
+™
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(îËÕùıÿÿÿÿ8îİ÷º¥3
+”
+java:S11205"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(âæÛÿ8îİ÷º¥3
+š
+java:S11208"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(½ÜŸ‰ÿÿÿÿÿ8îİ÷º¥3
+”
+java:S1120E"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¸¬‚–8îİ÷º¥3
+;	java:S113"'Add a new line at the end of this file.8öİ÷º¥3
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(•Œ¿Ş8øİ÷º¥3
+c
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ç„óËşÿÿÿÿ8øİ÷º¥3
+^
+java:S1106 "AMove this left curly brace to the beginning of next line of code.(ÌÃŸ8øİ÷º¥3
+c
+java:S11067"AMove this left curly brace to the beginning of next line of code.(¤¦ß‘üÿÿÿÿ8øİ÷º¥3
+]
+java:S1106C"AMove this left curly brace to the beginning of next line of code.(°¸ƒs8øİ÷º¥3
+X	java:S125""<This block of commented-out lines of code should be removed.(…§ÑÀ8–Ş÷º¥3
+R
+java:S1068"0Remove this unused "restTemplate" private field.(Õ«Îòÿÿÿÿÿ8›Ş÷º¥3
+Ü
+java:S4605"¾'CustomUserDetailsService' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(•Œ¿Ş8Ş÷º¥3

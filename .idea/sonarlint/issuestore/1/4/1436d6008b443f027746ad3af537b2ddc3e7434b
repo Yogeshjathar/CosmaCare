@@ -1,0 +1,47 @@
+
+
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(¿ÓÌ¨
+’
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¿â€ÿÿÿÿÿ
+
+java:S1120""wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Á‘‘
+’
+java:S1120("wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ñ›ì›øÿÿÿÿ
+
+java:S1120."wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(”Š¹
+
+java:S11203"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¦İï¹
+
+java:S11209"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(º‹ğ©
+’
+java:S1120?"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(äù²¤şÿÿÿÿ
+’
+java:S1120H"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ÃÓá¬üÿÿÿÿ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(™ãÛÑıÿÿÿÿ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(„†Êÿûÿÿÿÿ
+W
+java:S1106!"AMove this left curly brace to the beginning of next line of code.(¥ÜÑ
+W
+java:S1106'"AMove this left curly brace to the beginning of next line of code.(Œß–Ù
+\
+java:S1106-"AMove this left curly brace to the beginning of next line of code.(ğ¤È®ıÿÿÿÿ
+\
+java:S11062"AMove this left curly brace to the beginning of next line of code.(ËÄû¾ıÿÿÿÿ
+W
+java:S11068"AMove this left curly brace to the beginning of next line of code.(µ–óß
+W
+java:S1106>"AMove this left curly brace to the beginning of next line of code.(Æ¶ûÚ
+\
+java:S1106G"AMove this left curly brace to the beginning of next line of code.(€­—ÿÿÿÿÿ
+`	java:S103!"KSplit this 140 characters long line (which is greater than 120 authorized).(¥ÜÑ
+D
+java:S2208
+".Explicitly import the specific classes needed.(Ñ»ïÒ
+V
+java:S4684 "@Replace this persistent entity with a simple POJO or DTO object.(èÙœä
+G
+java:S1068"1Remove this unused "meterRegistry" private field.(‰²Ã¤
+Ò
+java:S4605"¶'RepairController' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(™ãÛÑıÿÿÿÿ

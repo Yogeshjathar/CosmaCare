@@ -1,0 +1,31 @@
+
+’
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(ØÍç¡ıÿÿÿÿ
+
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¯‡ıŞ
+
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(À¡³
+
+java:S1120-"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ŠßŞŞ
+”
+java:S11201"yMake this line start after 10 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Ù€ñŸÿÿÿÿÿ
+
+java:S1120?"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(€Ë¤„
+Œ
+java:S1120G"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(öğâf
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(³®¯óøÿÿÿÿ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(÷Î¼Şÿÿÿÿÿ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(¢­Ç¨ıÿÿÿÿ
+W
+java:S1106,"AMove this left curly brace to the beginning of next line of code.(ïàªÒ
+\
+java:S1106>"AMove this left curly brace to the beginning of next line of code.(÷øÒºøÿÿÿÿ
+W
+java:S1106F"AMove this left curly brace to the beginning of next line of code.(Öˆ’ª
+1
+java:S22110"Specify a type for: 'reward'(Š™{
+Ï
+java:S4605"³'RewardService' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.(³®¯óøÿÿÿÿ
